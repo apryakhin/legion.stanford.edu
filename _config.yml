@@ -1,0 +1,74 @@
+title:            Legion Programming System
+tagline:          A data-centric approach to parallel programming 
+description:      Home page for the Legion parallel programming system
+
+# Owner/author information
+owner:
+  name:           Legion
+  avatar:         legion_logo.jpg
+  bio:            A Data-Centric Parallel Programming System
+  email:          #legiondiscuss@googlegroups.com
+  # Social networking links are used in author-bio sidebar. Update and remove as you like.
+  twitter:        
+  facebook:       
+  github: StanfordLegion/legion        
+  linkedin:       
+  instagram:      
+  lastfm:         
+  tumblr:         
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:    
+
+# Analytics and webmaster tools stuff goes here
+google_analytics: UA-20524102-3   
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:        
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: Overview 
+    url: /overview/
+  - title: Getting Started 
+    url: /starting/
+  - title: Tutorials
+    url: /tutorial/
+  - title: Bootcamp
+    url: /bootcamp/
+  - title: Documentation
+    url: /documentation/
+  - title: Publications
+    url: /publications/
+  - title: Community
+    url: /community/
+  - title: Traces
+    url: /traces/
+  - title: Weft
+    url: /weft/
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/Los_Angeles
+future:      true
+pygments:    true
+markdown:    kramdown
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title.html
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+  coderay:
+    coderay_line_numbers: 
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+include: [".htaccess"]
+exclude: [".gitignore", "README.md", "lib", "config.rb", "Capfile", "config", "Doxyfile", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
