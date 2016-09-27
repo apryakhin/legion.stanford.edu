@@ -28,7 +28,7 @@ legion:
 ifneq ($(wildcard _legion/.),)
 	git -C _legion pull --no-ff
 else
-	git clone https://github.com/StanfordLegion/legion.git _legion
+	git clone -b master https://github.com/StanfordLegion/legion.git _legion
 endif
 
 .PHONY: build
