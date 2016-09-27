@@ -26,7 +26,7 @@ doxygen: legion
 .PHONY: legion
 legion:
 ifneq ($(wildcard _legion/.),)
-	git -C _legion pull --no-ff
+	git -C _legion pull --ff-only
 else
 	git clone -b master https://github.com/StanfordLegion/legion.git _legion
 endif
