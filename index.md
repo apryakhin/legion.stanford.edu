@@ -62,12 +62,12 @@ High Performance Computing Research Center, and NVIDIA.
 </tr>
 
 <tr>
-<td><a href="http://theory.stanford.edu/~aiken">Alex Aiken</a></td>
+<td>Todd Warszawski</td>
 <td><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#107;&#101;&#105;&#064;&#108;&#097;&#110;&#108;&#046;&#103;&#111;&#118;">Kei Davis</a></td>
 </tr>
 
 <tr>
-<td></td>
+<td><a href="http://theory.stanford.edu/~aiken">Alex Aiken</a></td>
 <td><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#103;&#115;&#104;&#105;&#112;&#109;&#097;&#110;&#064;&#108;&#097;&#110;&#108;&#046;&#103;&#111;&#118;">Galen Shipman</a></td>
 </tr>
 
