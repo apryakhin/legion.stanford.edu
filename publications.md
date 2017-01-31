@@ -12,7 +12,7 @@ title: Publications
       * [Michael Bauer's Thesis (2014)](#bauer_thesis) \[[PDF](/pdfs/bauer_thesis.pdf)]
   * Programming Model:
       * [Partitioning Type System (OOPSLA 2013)](#oopsla2013) \[[PDF](/pdfs/oopsla2013.pdf)]
-      * [Dependent Partitioning (OOPSLA 2016, to appear)](#dpl2016) \[[PDF](/pdfs/dpl2016.pdf)]
+      * [Dependent Partitioning (OOPSLA 2016)](#dpl2016) \[[PDF](/pdfs/dpl2016.pdf)]
   * [Realm (PACT 2014)](#pact2014) \[[PDF](/pdfs/realm2014.pdf)]
       * [Sean Treichler's Thesis (2016)](#treichler_thesis) \[[PDF](/pdfs/treichler_thesis.pdf)]
   * [Regent (SC 2015)](#sc2015) \[[PDF](/pdfs/regent2015.pdf)]
@@ -174,7 +174,7 @@ comparable to hand-tuned Legion.
 
 <a name="dpl2016"></a>__Dependent Partitioning__ [PDF](/pdfs/dpl2016.pdf) <br/>
 _Sean Treichler, Michael Bauer, Rahul Sharma, Elliott Slaughter, and Alex Aiken_ <br/>
-To appear in Object Oriented Programming, Systems, Languages,
+In Object Oriented Programming, Systems, Languages,
 and Applications ([OOPSLA 2016](http://2016.splashcon.org/track/splash-2016-oopsla)) <br/>
 __Abstract:__ A key problem in parallel programming is how data is
 *partitioned*: divided into subsets that can be operated on in
