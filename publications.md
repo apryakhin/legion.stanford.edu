@@ -264,7 +264,7 @@ of S3D running on Legion is nearly three times as fast as comparable
 state-of-the-art versions of S3D when run at 8192 nodes on the number
 two supercomputer in the world.
 
-**Realm: Performance Portability through Composable
+<a name="treichler_thesis"></a>**Realm: Performance Portability through Composable
 Asynchrony** [PDF](/pdfs/treichler_thesis.pdf)<br/>
 *Sean Jeffrey Treichler*<br/>
 December 2016<br/>
