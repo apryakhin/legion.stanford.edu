@@ -14,6 +14,7 @@ title: Publications
       * [Partitioning Type System (OOPSLA 2013)](#oopsla2013) \[[PDF](/pdfs/oopsla2013.pdf)]
       * [Dependent Partitioning (OOPSLA 2016, to appear)](#dpl2016) \[[PDF](/pdfs/dpl2016.pdf)]
   * [Realm (PACT 2014)](#pact2014) \[[PDF](/pdfs/realm2014.pdf)]
+      * [Sean Treichler's Thesis (2016)](#treichler_thesis) \[[PDF](/pdfs/treichler_thesis.pdf)]
   * [Regent (SC 2015)](#sc2015) \[[PDF](/pdfs/regent2015.pdf)]
   * DSLs:
       * [Singe (PPoPP 2014)](#ppopp2014) \[[PDF](/pdfs/singe2014.pdf)]
@@ -31,12 +32,12 @@ organized around logical regions, which express both locality and
 independence of program data, and tasks, functions that perform
 computations on regions. We describe a runtime system that
 dynamically extracts parallelism from Legion programs, using
-a distributed, parallel scheduling algorithm that identiﬁes both
+a distributed, parallel scheduling algorithm that identifies both
 independent tasks and nested parallelism. Legion also enables
 explicit, programmer controlled movement of data through the
 memory hierarchy and placement of tasks based on locality
 information via a novel mapping interface. We evaluate our
-Legion implementation on three applications: ﬂuid-ﬂow on a
+Legion implementation on three applications: fluid-flow on a
 regular grid, a three-level AMR code solving a heat diffusion
 equation, and a circuit simulation.
 
@@ -62,7 +63,7 @@ We present the novel aspects of the Legion design, in particular
 the combination of static and dynamic checks used to enforce soundness. We give an 
 extended example illustrating how Legion can express computations with dynamically 
 determined relationships between computations and data partitions. We prove the soundness 
-of Legion’s type system, and show Legion type checking improves performance by up to
+of Legion's type system, and show Legion type checking improves performance by up to
 71% by eliding provably safe memory checks. In particular, we show that the dynamic 
 checks to detect aliasing at runtime at the region granularity have negligible overhead.
 We report results for three real-world applications running
@@ -262,3 +263,60 @@ different architectures. Our performance results show that a version
 of S3D running on Legion is nearly three times as fast as comparable
 state-of-the-art versions of S3D when run at 8192 nodes on the number
 two supercomputer in the world.
+
+**Realm: Performance Portability through Composable
+Asynchrony** [PDF](/pdfs/treichler_thesis.pdf)<br/>
+*Sean Jeffrey Treichler*<br/>
+December 2016<br/>
+**Abstract:** Modern supercomputers are growing increasingly
+complicated. The laws of physics have forced processor counts into the
+thousands or even millions, resulted in the creation of deep
+distributed memory hierarchies, and encouraged the use of multiple
+processor and memory types in the same system. Developing an
+application that is able to fully utilize such a system is very
+difficult. The development of an application that is able to run well
+on more than one such system with current programming models is so
+daunting that it is generally not even attempted.
+
+The Legion project attempts to address these challenges by combining a
+traditional hierarchical application structure (i.e. tasks/functions
+calling other tasks/functions) with a hierarchical data model (logical
+regions, which may be partitioned into subregions), and introducing
+the concept of mapping, a process in which the tasks and regions of a
+machine-agnostic description are assigned to the processors and
+memories of a particular machine.
+
+This dissertation focuses on Realm, the "low-level" runtime that
+manages the execution of a mapped Legion application. Realm is a fully
+asynchronous event-based runtime. Realm operations are deferred by the
+runtime, returning an event that triggers upon completion of the
+operation.  These events may be used as preconditions for other
+operations, allowing arbitrary composition of asynchronous
+operations. The resulting operation graph naturally exposes the
+available parallelism in the application as well as opportunities for
+hiding the latency of any required communication.  While asynchronous
+task launches and non-blocking data movement are fairly common in
+existing programming models, Realm makes all runtime operations
+asynchronous --- this includes resource management, performance
+feedback, and even, apparently paradoxically, synchronization
+primitives.
+
+Important design and implementation issues of Realm will be discussed,
+including the novel generational event data structure that allows
+Realm to efficiently and scalably handle a very large number of events
+in a distributed environment and the machine model that provides the
+information required for the mapping of a Legion application onto a
+system. Realm anticipates dynamic behavior of both future applications
+and future systems and includes mechanisms for application-directed
+profiling, fault reporting, and dynamic code generation that further
+improve performance portability by allowing an application to adapt to
+and optimize for the exact system configuration used for each run.
+
+Microbenchmarks demonstrate the efficiency and scalability of the
+Realm and justify some of the non-obvious design decisions
+(e.g. unfairness in locks). Experiments with several mini-apps are
+used to measure the benefit of a fully asynchronous runtime compared
+to existing "non-blocking" approaches. Finally, performance of Legion
+applications at full-scale show how Realm's composable asynchrony and
+support for heterogeneity benefit the overall Legion system on a
+variety of modern supercomputers.
