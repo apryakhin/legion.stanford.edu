@@ -45,28 +45,29 @@ High Performance Computing Research Center, and NVIDIA.
 </tr>
 
 <tr valign="middle">
-<td><a href="http://cs.stanford.edu/~sjt/">Sean Treichler</a></td>
+<td><a href="https://elliottslaughter.com">Elliott Slaughter</a></td>
 <td><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#112;&#097;&#116;&#064;&#108;&#097;&#110;&#108;&#046;&#103;&#111;&#118;">Pat McCormick</a></td>
 <td><a href="http://lightsighter.org">Michael Bauer</a> (<a href="https://research.nvidia.com/users/mike-bauer">NVIDIA site</a>)</td>
 </tr>
 
 <tr valign="middle">
-<td><a href="http://elliottslaughter.com">Elliott Slaughter</a></td>
-<td><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#099;&#102;&#101;&#114;&#101;&#110;&#098;&#097;&#064;&#108;&#097;&#110;&#108;&#046;&#103;&#111;&#118;">Charles Ferenbaugh</a></td>
-</tr>
-
-<tr>
 <td>Wonchan Lee</td>
-<td><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#115;&#097;&#109;&#117;&#101;&#108;&#064;&#108;&#097;&#110;&#108;&#046;&#103;&#111;&#118;">Samuel Gutierrez</a></td>
+<td><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#099;&#102;&#101;&#114;&#101;&#110;&#098;&#097;&#064;&#108;&#097;&#110;&#108;&#046;&#103;&#111;&#118;">Charles Ferenbaugh</a></td>
+<td><a href="http://cs.stanford.edu/~sjt/">Sean Treichler</a></td>
 </tr>
 
 <tr>
 <td>Zhihao Jia</td>
-<td><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#107;&#101;&#105;&#064;&#108;&#097;&#110;&#108;&#046;&#103;&#111;&#118;">Kei Davis</a></td>
+<td><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#115;&#097;&#109;&#117;&#101;&#108;&#064;&#108;&#097;&#110;&#108;&#046;&#103;&#111;&#118;">Samuel Gutierrez</a></td>
 </tr>
 
 <tr>
 <td><a href="http://theory.stanford.edu/~aiken">Alex Aiken</a></td>
+<td><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#107;&#101;&#105;&#064;&#108;&#097;&#110;&#108;&#046;&#103;&#111;&#118;">Kei Davis</a></td>
+</tr>
+
+<tr>
+<td></td>
 <td><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#103;&#115;&#104;&#105;&#112;&#109;&#097;&#110;&#064;&#108;&#097;&#110;&#108;&#046;&#103;&#111;&#118;">Galen Shipman</a></td>
 </tr>
 
