@@ -52,27 +52,27 @@ High Performance Computing Research Center, and NVIDIA.
 
 <tr valign="middle">
 <td>Wonchan Lee</td>
-<td><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#099;&#102;&#101;&#114;&#101;&#110;&#098;&#097;&#064;&#108;&#097;&#110;&#108;&#046;&#103;&#111;&#118;">Charles Ferenbaugh</a></td>
+<td><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#115;&#097;&#109;&#117;&#101;&#108;&#064;&#108;&#097;&#110;&#108;&#046;&#103;&#111;&#118;">Samuel Gutierrez</a></td>
 <td><a href="http://cs.stanford.edu/~sjt/">Sean Treichler</a></td>
 </tr>
 
 <tr>
 <td>Zhihao Jia</td>
-<td><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#115;&#097;&#109;&#117;&#101;&#108;&#064;&#108;&#097;&#110;&#108;&#046;&#103;&#111;&#118;">Samuel Gutierrez</a></td>
-</tr>
-
-<tr>
-<td>Todd Warszawski</td>
-<td><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#107;&#101;&#105;&#064;&#108;&#097;&#110;&#108;&#046;&#103;&#111;&#118;">Kei Davis</a></td>
-</tr>
-
-<tr>
-<td><a href="http://theory.stanford.edu/~aiken">Alex Aiken</a></td>
 <td><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#103;&#115;&#104;&#105;&#112;&#109;&#097;&#110;&#064;&#108;&#097;&#110;&#108;&#046;&#103;&#111;&#118;">Galen Shipman</a></td>
 </tr>
 
 <tr>
+<td>Todd Warszawski</td>
+<td>Jonathan Graham</td>
+</tr>
+
+<tr>
+<td><a href="http://theory.stanford.edu/~aiken">Alex Aiken</a></td>
+<td>Irina Demeshko</td>
+</tr>
+
+<tr>
 <td></td>
-<td><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#110;&#111;&#097;&#104;&#119;&#097;&#116;&#107;&#105;&#110;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Noah Watkins</a></td>
+<td>Nick Moss</td>
 </tr>
 </table>
