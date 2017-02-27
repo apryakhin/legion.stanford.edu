@@ -18,7 +18,7 @@ title: Publications
   * [Regent (SC 2015)](#sc2015) \[[PDF](/pdfs/regent2015.pdf)]
   * DSLs:
       * [Singe (PPoPP 2014)](#ppopp2014) \[[PDF](/pdfs/singe2014.pdf)]
-      * [Scout (WOLFHPC 2014)](#wolfhpc2014) \[[PDF](http://conferences.computer.org/wolfhpc/2014/papers/7020a001.pdf)]
+      * [Scout (WOLFHPC 2014)](#wolfhpc2014) \[[PDF](/pdfs/scout2014.pdf)]
 
 ## Papers
 
@@ -130,7 +130,7 @@ is up to 3.75X faster than previously optimized data-parallel GPU kernels.
 
 <a name="wolfhpc2014"></a>_Note: The following paper is an example of a DSL
 compiler toolchain that targets Legion as a backend._<br/>
-__Exploring the Construction of a Domain-Aware Toolchain for High-Performance Computing__ [PDF](http://conferences.computer.org/wolfhpc/2014/papers/7020a001.pdf) <br/>
+__Exploring the Construction of a Domain-Aware Toolchain for High-Performance Computing__ [PDF](/pdfs/scout2014.pdf) <br/>
 _Patrick McCormick, Christine Sweeney, Nick Moss, Dean Prichard,
 Samuel K. Gutierrez, Kei Davis, Jamaludin Mohd-Yusof_<br/>
 In the International Workshop on Domain-Specific Languages and High-Level Frameworks for High Performance Computing ([WOLFHPC 2014](http://conferences.computer.org/wolfhpc/2014/)) <br/>
