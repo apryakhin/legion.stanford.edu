@@ -58,9 +58,9 @@ DEBUG=0 make
 $LG_RT_DIR/tools/legion_prof.py prof_*.log
 {% endhighlight %}
 
-This will generate a number of files in the current directory,
-including a file named `legion_prof.html`. Open this file in your
-browser. A sample of Legion Prof's output is shown below.
+This will generate a subdirectory called `legion_prof` under the
+current directory, including a file named `index.html`. Open this file
+in your browser. A sample of Legion Prof's output is shown below.
 
 ![](/images/legion_prof.jpg)
 
