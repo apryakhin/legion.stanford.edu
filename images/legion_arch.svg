@@ -6,9 +6,9 @@
 	 xml:space="preserve">
 <rect fill="#FFF200" width="78.667" height="58.667"/>
 <rect y="166.667" fill="#ED1C24" width="369.667" height="62"/>
-<text transform="matrix(1 0 0 1 127.3188 203)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">Legion High-Level Runtime</text>
+<text transform="matrix(1 0 0 1 127.3188 203)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">Legion Runtime</text>
 <rect y="239.333" fill="#2E3192" width="369.667" height="22.667"/>
-<text transform="matrix(1 0 0 1 71.4409 253.9995)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">Low-Level Runtime API (with Machine Model)</text>
+<text transform="matrix(1 0 0 1 130 253.9995)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">Realm Runtime</text>
 <rect x="236" y="65.333" fill="#00A651" width="62.667" height="62"/>
 <text transform="matrix(1 0 0 1 248.98 93)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">Default</tspan><tspan x="-1.158" y="14.4" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">Mapper</tspan></text>
 <rect x="302.667" y="65.333" fill="#00A651" width="62.666" height="62"/>
@@ -35,16 +35,16 @@
 			<line fill="none" stroke="#662D91" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="13.5555,13.5555" x1="369.667" y1="294.222" x2="369.667" y2="314.555"/>
 	</g>
 </g>
-<text transform="matrix(1 0 0 1 12.2021 296.333)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">Shared-Memory-</tspan><tspan x="7.89" y="14.4" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">Only Runtime</tspan></text>
-<text transform="matrix(1 0 0 1 139.3901 296.333)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">GASNet + CUDA +</tspan><tspan x="0.78" y="14.4" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">Pthreads Runtime</tspan></text>
-<text transform="matrix(1 0 0 1 276.0103 296.333)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="12">Extensible Low-</tspan><tspan x="3.642" y="14.4" font-family="'MyriadPro-Regular'" font-size="12">Level Runtime</tspan></text>
+<text transform="matrix(1 0 0 1 12.2021 296.333)"><tspan x="18" y="10" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">GASNet</tspan></text>
+<text transform="matrix(1 0 0 1 139.3901 296.333)"><tspan x="28" y="10" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">CUDA</tspan></text>
+<text transform="matrix(1 0 0 1 276.0103 296.333)"><tspan x="10" y="0" font-family="'MyriadPro-Regular'" font-size="12">Additional</tspan><tspan x="16" y="14.4" font-family="'MyriadPro-Regular'" font-size="12">Modules</tspan></text>
 <rect y="134.333" fill="#ED1C24" width="228" height="22.667"/>
 <text transform="matrix(1 0 0 1 52.771 149.6665)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">Legion C++ Runtime API</text>
 <rect x="234.667" y="134.333" fill="#00A651" width="129.666" height="22.667"/>
 <text transform="matrix(1 0 0 1 259.8271 149.333)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">Mapper Interface</text>
 <rect y="67" fill="#00AEEF" width="78.667" height="58.667"/>
-<text transform="matrix(1 0 0 1 22.1138 90.333)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">Legion</tspan><tspan x="-5.76" y="14.4" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">Compiler</tspan></text>
+<text transform="matrix(1 0 0 1 22.1138 90.333)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">Regent</tspan><tspan x="-5.76" y="14.4" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">Compiler</tspan></text>
 <rect x="87.333" y="67" fill="#FBB040" width="140.667" height="58.667"/>
 <text transform="matrix(1 0 0 1 95.9814 100.333)" font-family="'MyriadPro-Regular'" font-size="12">C++ Legion Applications</text>
-<text transform="matrix(1 0 0 1 18.0981 19.8335)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="12">Compiled</tspan><tspan x="7.182" y="14.4" font-family="'MyriadPro-Regular'" font-size="12">Legion</tspan><tspan x="-6.888" y="28.8" font-family="'MyriadPro-Regular'" font-size="12">Applications</tspan></text>
+<text transform="matrix(1 0 0 1 18.0981 19.8335)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="12">Compiled</tspan><tspan x="7.182" y="14.4" font-family="'MyriadPro-Regular'" font-size="12">Regent</tspan><tspan x="-6.888" y="28.8" font-family="'MyriadPro-Regular'" font-size="12">Applications</tspan></text>
 </svg>

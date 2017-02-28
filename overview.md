@@ -219,30 +219,22 @@ written in the Regent programming language or written directly to the
 Legion C++ runtime interface. Applications written in Regent are
 compiled to LLVM (and call a C wrapper for the C++ runtime API).
 
-The Legion high-level runtime system implements the
+The Legion runtime system implements the
 Legion programming model and supports all the necessary
 API calls for writing Legion applications. Mappers are
 special C++ objects that are built on top of the
 Legion mapping interface which is queried by the 
-high-level runtime system to make all mapping decisions
+Legion runtime system to make all mapping decisions
 when executing a Legion program. Applications can 
 either chose to use the default Legion mapper or
 write custom mappers for higher performance.
 
-The high-level runtime system sits on top of a
-low-level runtime interface. The low-level interface
+The Legion runtime system sits on top of a
+low-level runtime interface called *Realm*. The Realm interface
 is designed to provide portability to the entire
 Legion system by providing primitives which can be
-implemented on a wide range of architectures. There
-are currently two implementations of the interface:
-a shared-memory-only version which is useful for
-prototyping and debugging, and a high-performance
-version which can run on large heterogeneous clusters.
-Note that the low-level interface also defines the
-machine object which provides the interface to 
-the mapper for understanding the underlying
-architecture. A third implementation of the low-level
-interface which supports plug-and-play modules is
-currently in the early stages of development.
-
-
+implemented on a wide range of architectures. Realm is a modular
+runtime and supports a variety of underlying technologies for
+portability across a variety of machines, including GASNet for
+high-performance networking on a variety of interconnects and CUDA for
+GPUs.
