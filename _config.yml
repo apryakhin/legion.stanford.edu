@@ -37,12 +37,8 @@ links:
     url: /documentation/
   - title: Publications
     url: /publications/
-  - title: Community
-    url: /community/
-  - title: Traces
-    url: /traces/
-  - title: Weft
-    url: /weft/
+  - title: Resources
+    url: /resources/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Los_Angeles
