@@ -46,9 +46,9 @@ title: Legion Bootcamp 2017
 
 ## Talks
 
-  * Advanced Profiling (Slides, [Video](https://www.youtube.com/watch?v=Mk7kER1xyiA&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=8))
-  * Legion C++ API & Control Replication (Slides, [Video](https://www.youtube.com/watch?v=nKBhMlPHpvY&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=9))
-  * Regent Update (Slides, [Video](https://www.youtube.com/watch?v=2VyhhtIOijQ&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=10))
+  * **Advanced Profiling:** [Slides](/pdfs/bootcamp2017/AdvancedProfiling.pdf), [Video](https://www.youtube.com/watch?v=Mk7kER1xyiA&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=8)
+  * **Legion C++ API & Control Replication:** [Slides](/pdfs/bootcamp2017/LegionControlReplication.pdf), [Video](https://www.youtube.com/watch?v=nKBhMlPHpvY&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=9)
+  * **Regent Update:** Slides, [Video](https://www.youtube.com/watch?v=2VyhhtIOijQ&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=10)
 
 <!--
 ## Exercises
