@@ -5,15 +5,58 @@ title: Legion Bootcamp 2017
 ---
 
 
+## Tutorial
+
+### Part 1
+
+[Slides]()
+
+  * Tasks ([Video](https://www.youtube.com/watch?v=sC0UBFx0lXg&t=4235s&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=1))
+
+    Time index:
+
+      * [0:00: Overview](https://www.youtube.com/watch?v=sC0UBFx0lXg&t=4235s&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=1&t=0s)
+      * [26:50: Tasks](https://www.youtube.com/watch?v=sC0UBFx0lXg&t=4235s&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=1&t=26m50s)
+      * [47:25: Legion Prof](https://www.youtube.com/watch?v=sC0UBFx0lXg&t=4235s&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=1&t=47m25s)
+      * [1:11:17: Parallelism](https://www.youtube.com/watch?v=sC0UBFx0lXg&t=4235s&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=1&t=1h11m17s)
+
+  * Structured Regions ([Video](https://www.youtube.com/watch?v=s87dWwnWKN8&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=2))
+
+    Time index:
+
+      * [0:10: Legion Spy](https://www.youtube.com/watch?v=s87dWwnWKN8&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=2&t=10s)
+      * [5:54: Exercise 1](https://www.youtube.com/watch?v=s87dWwnWKN8&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=2&t=5m54s)
+      * [21:32: Terra](https://www.youtube.com/watch?v=s87dWwnWKN8&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=2&t=21m32s)
+      * [35:49: Structured Regions](https://www.youtube.com/watch?v=s87dWwnWKN8&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=2&t=35m49s)
+
+  * Partitioning ([Video](https://www.youtube.com/watch?v=ZKfe5JG7LDo&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=3))
+
+    Time index:
+
+      * [0:06: Partitioning](https://www.youtube.com/watch?v=ZKfe5JG7LDo&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=3&t=6s)
+      * [1:05:51: Image Blur](https://www.youtube.com/watch?v=ZKfe5JG7LDo&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=3&t=1h5m51s)
+
+  * Unstructured Regions ([Video](https://www.youtube.com/watch?v=KEMh0b4VmTU&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=4))
+
+    Time index:
+
+      * [0:06: Unstructured Regions](https://www.youtube.com/watch?v=KEMh0b4VmTU&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=4&t=6s)
+      * [14:25: Dependent Partitioning](https://www.youtube.com/watch?v=KEMh0b4VmTU&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=4&t=14m25s)
+      * [58:12: Some Comments on Type Checking](https://www.youtube.com/watch?v=KEMh0b4VmTU&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=4&t=58m12s)
+
+  * Putting it All Together ([Video](https://www.youtube.com/watch?v=RpF2GFtClvw&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=5))
+
+    Time index:
+
+      * [0:02: Page Rank](https://www.youtube.com/watch?v=RpF2GFtClvw&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=5&t=2s)
+
+### Part 2
+
+  * Performance Tuning via Mapping ([Video](https://www.youtube.com/watch?v=zJI-APPig2g&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=6))
+  * Writing Performant & Portable Kernels ([Video](https://www.youtube.com/watch?v=U_V0sd0nmzk&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=7))
+
 ## Talks
 
-  * Tasks (Slides, [Video](https://www.youtube.com/watch?v=sC0UBFx0lXg&t=4235s&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=1))
-  * Structured Regions (Slides, [Video](https://www.youtube.com/watch?v=s87dWwnWKN8&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=2))
-  * Unstructured Regions Pt. 1 (Slides, [Video](https://www.youtube.com/watch?v=ZKfe5JG7LDo&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=3))
-  * Unstructured Regions Pt. 2 (Slides, [Video](https://www.youtube.com/watch?v=KEMh0b4VmTU&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=4))
-  * Putting it All Together (Slides, [Video](https://www.youtube.com/watch?v=RpF2GFtClvw&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=5))
-  * Performance Tuning via Mapping (Slides, [Video](https://www.youtube.com/watch?v=zJI-APPig2g&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=6))
-  * Writing Performant & Portable Kernels (Slides, [Video](https://www.youtube.com/watch?v=U_V0sd0nmzk&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=7))
   * Advanced Profiling (Slides, [Video](https://www.youtube.com/watch?v=Mk7kER1xyiA&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=8))
   * Legion C++ API & Control Replication (Slides, [Video](https://www.youtube.com/watch?v=nKBhMlPHpvY&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=9))
   * Regent Update (Slides, [Video](https://www.youtube.com/watch?v=2VyhhtIOijQ&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=10))
