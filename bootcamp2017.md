@@ -24,7 +24,7 @@ title: Legion Bootcamp 2017
   * **Partitioning:** [Video](https://www.youtube.com/watch?v=ZKfe5JG7LDo&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=3), Time Index:
       * [0:00: Partitioning](https://www.youtube.com/watch?v=ZKfe5JG7LDo&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=3&t=0s)
       * [1:05:51: Image Blur](https://www.youtube.com/watch?v=ZKfe5JG7LDo&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=3&t=1h5m51s)
-  * **Unstructured Regions** [Video](https://www.youtube.com/watch?v=KEMh0b4VmTU&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=4), Time Index:
+  * **Unstructured Regions:** [Video](https://www.youtube.com/watch?v=KEMh0b4VmTU&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=4), Time Index:
       * [0:00: Unstructured Regions](https://www.youtube.com/watch?v=KEMh0b4VmTU&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=4&t=0s)
       * [14:25: Dependent Partitioning](https://www.youtube.com/watch?v=KEMh0b4VmTU&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=4&t=14m25s)
       * [58:12: Some Comments on Type Checking](https://www.youtube.com/watch?v=KEMh0b4VmTU&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=4&t=58m12s)
@@ -42,7 +42,7 @@ title: Legion Bootcamp 2017
       * [31:05: Circuit Partitioning](https://www.youtube.com/watch?v=zJI-APPig2g&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=6&t=31m5s)
       * [39:34: Circuit Tasks](https://www.youtube.com/watch?v=zJI-APPig2g&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=6&t=39m34s)
       * [58:50: Circuit Mapping](https://www.youtube.com/watch?v=zJI-APPig2g&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=6&t=58m50s)
-  * Writing Performant & Portable Kernels ([Video](https://www.youtube.com/watch?v=U_V0sd0nmzk&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=7))
+  * **Writing Performant & Portable Kernels:** [Video](https://www.youtube.com/watch?v=U_V0sd0nmzk&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=7), Time Index:
       * [0:00: Circuit Mapping Cont.](https://www.youtube.com/watch?v=U_V0sd0nmzk&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=7&t=0s)
       * [25:50: Regent Optimizations](https://www.youtube.com/watch?v=U_V0sd0nmzk&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=7&t=25m50s)
       * [33:48: Circuit Performance](https://www.youtube.com/watch?v=U_V0sd0nmzk&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=7&t=33m48s)
