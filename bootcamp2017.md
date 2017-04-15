@@ -11,13 +11,13 @@ title: Legion Bootcamp 2017
 
 [Slides]()
 
-  * Tasks ([Video](https://www.youtube.com/watch?v=sC0UBFx0lXg&t=4235s&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=1))
+  * Tasks ([Video](https://www.youtube.com/watch?v=sC0UBFx0lXg&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=1))
 
     Time index:
-      * [0:00: Overview](https://www.youtube.com/watch?v=sC0UBFx0lXg&t=4235s&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=1&t=0s)
-      * [26:50: Tasks](https://www.youtube.com/watch?v=sC0UBFx0lXg&t=4235s&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=1&t=26m50s)
-      * [47:25: Legion Prof](https://www.youtube.com/watch?v=sC0UBFx0lXg&t=4235s&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=1&t=47m25s)
-      * [1:11:17: Parallelism](https://www.youtube.com/watch?v=sC0UBFx0lXg&t=4235s&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=1&t=1h11m17s)
+      * [0:00: Overview](https://www.youtube.com/watch?v=sC0UBFx0lXg&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=1&t=0s)
+      * [26:50: Tasks](https://www.youtube.com/watch?v=sC0UBFx0lXg&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=1&t=26m50s)
+      * [47:25: Legion Prof](https://www.youtube.com/watch?v=sC0UBFx0lXg&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=1&t=47m25s)
+      * [1:11:17: Parallelism](https://www.youtube.com/watch?v=sC0UBFx0lXg&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=1&t=1h11m17s)
 
   * Structured Regions ([Video](https://www.youtube.com/watch?v=s87dWwnWKN8&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=2))
 
