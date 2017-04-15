@@ -7,9 +7,7 @@ title: Legion Bootcamp 2017
 
 ## Tutorial
 
-### Part 1
-
-[Slides](/pdfs/bootcamp2017/TutorialPart1.pdf)
+### Part 1: [Slides](/pdfs/bootcamp2017/TutorialPart1.pdf)
 
   * **Tasks:** [Video](https://www.youtube.com/watch?v=sC0UBFx0lXg&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=1), Time Index:
       * [0:00: Overview](https://www.youtube.com/watch?v=sC0UBFx0lXg&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=1&t=0s)
@@ -31,9 +29,7 @@ title: Legion Bootcamp 2017
   * **Putting it All Together:** [Video](https://www.youtube.com/watch?v=RpF2GFtClvw&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=5), Time Index:
       * [0:00: Page Rank](https://www.youtube.com/watch?v=RpF2GFtClvw&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=5&t=0s)
 
-### Part 2
-
-[Slides](/pdfs/bootcamp2017/TutorialPart2.pdf)
+### Part 2: [Slides](/pdfs/bootcamp2017/TutorialPart2.pdf)
 
   * **Performance Tuning via Mapping:** [Video](https://www.youtube.com/watch?v=zJI-APPig2g&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=6), Time Index:
       * [0:00: Coherence](https://www.youtube.com/watch?v=zJI-APPig2g&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=6&t=0s)
