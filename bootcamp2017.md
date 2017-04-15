@@ -4,22 +4,21 @@ permalink: /bootcamp2017/index.html
 title: Legion Bootcamp 2017
 ---
 
-<!--
 
 ## Talks
 
-  * **What's New in 2015**, Alex Aiken ([Slides](/pdfs/bootcamp2015/01_overview.pdf), [Video](https://www.youtube.com/watch?v=ASnqaaXrXzY))
-  * **Regent**, Elliott Slaughter ([Slides](/pdfs/bootcamp2015/02_regent.pdf), [Video](https://www.youtube.com/watch?v=Q2CHD9N_Gyw))
-  * **Partitioning API**, Sean Treichler ([Slides](/pdfs/bootcamp2015/03_partitioning.pdf), [Video](https://www.youtube.com/watch?v=tEEAWHSJKsc))
-  * **Mapping API**, Michael Bauer ([Slides](/pdfs/bootcamp2015/04_mapping.pdf), [Video](https://www.youtube.com/watch?v=t6Cv6K1ZO-w))
-  * **Asynchronous I/O**, Zhihao Jia ([Slides](/pdfs/bootcamp2015/05_io.pdf), [Video](https://www.youtube.com/watch?v=X6T3D0wDol4))
-  * **Profiling and Debugging**, Wonchan Lee ([Slides](/pdfs/bootcamp2015/06_profiling_debugging.pdf), [Video](https://www.youtube.com/watch?v=8RVhRjhyvI4))
-  * **MiniAero**, Wonchan Lee ([Slides](/pdfs/bootcamp2015/07_miniaero.pdf), [Video](https://www.youtube.com/watch?v=LZWM9Sek3D4))
-  * **Legion User Experiences:**
-      * Hemanth Kolla ([Slides](/pdfs/bootcamp2015/08c_hemanth_kolla.pdf), [Video](https://www.youtube.com/watch?v=Pbqu1Ov96Hs&t=22m58s))
-      * Philippe P&eacute;bay ([Slides](/pdfs/bootcamp2015/08d_philippe_pebay.pdf), [Video](https://www.youtube.com/watch?v=Pbqu1Ov96Hs&t=40m34s))
-  * **Roadmap**, Alex Aiken ([Slides](/pdfs/bootcamp2015/09_roadmap.pdf), [Video](https://www.youtube.com/watch?v=lzM2HusPz9k))
+  * Tasks (Slides, [Video](https://www.youtube.com/watch?v=sC0UBFx0lXg&t=4235s&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=1))
+  * Structured Regions (Slides, [Video](https://www.youtube.com/watch?v=s87dWwnWKN8&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=2))
+  * Unstructured Regions Pt. 1 (Slides, [Video](https://www.youtube.com/watch?v=ZKfe5JG7LDo&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=3))
+  * Unstructured Regions Pt. 2 (Slides, [Video](https://www.youtube.com/watch?v=KEMh0b4VmTU&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=4))
+  * Putting it All Together (Slides, [Video](https://www.youtube.com/watch?v=RpF2GFtClvw&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=5))
+  * Performance Tuning via Mapping (Slides, [Video](https://www.youtube.com/watch?v=zJI-APPig2g&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=6))
+  * Writing Performant & Portable Kernels (Slides, [Video](https://www.youtube.com/watch?v=U_V0sd0nmzk&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=7))
+  * Advanced Profiling (Slides, [Video](https://www.youtube.com/watch?v=Mk7kER1xyiA&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=8))
+  * Legion C++ API & Control Replication (Slides, [Video](https://www.youtube.com/watch?v=nKBhMlPHpvY&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=9))
+  * Regent Update (Slides, [Video](https://www.youtube.com/watch?v=2VyhhtIOijQ&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=10))
 
+<!--
 ## Exercises
 
 The exercises from the bootcamp are available in a [Github repository](https://github.com/StanfordLegion/bootcamp-2015) (and linked below). In order to run these examples on your local machine, follow the [Regent installation instructions](https://github.com/StanfordLegion/legion/tree/master/language).
