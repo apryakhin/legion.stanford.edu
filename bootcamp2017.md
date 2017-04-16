@@ -47,22 +47,9 @@ title: Legion Bootcamp 2017
   * **Legion C++ API & Control Replication:** [Slides](/pdfs/bootcamp2017/LegionControlReplication.pdf), [Video](https://www.youtube.com/watch?v=nKBhMlPHpvY&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=9)
   * **Regent Update:** [Slides](/pdfs/bootcamp2017/Regent.pdf), [Video](https://www.youtube.com/watch?v=2VyhhtIOijQ&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=10)
 
-<!--
 ## Exercises
 
-The exercises from the bootcamp are available in a [Github repository](https://github.com/StanfordLegion/bootcamp-2015) (and linked below). In order to run these examples on your local machine, follow the [Regent installation instructions](https://github.com/StanfordLegion/legion/tree/master/language).
-
-  * **Session 1: Regions and Tasks**
-      * Part 1: [Instructions](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session1/part1/instructions.md), [Starter Code](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session1/part1/circuit.rg), [Solution Code](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session1/part1/circuit_sol.rg)
-      * Part 2: [Instructions](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session1/part2/instructions.md), [Starter Code](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session1/part2/circuit.rg), [Solution Code](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session1/part2/circuit_sol.rg)
-  * **Session 2: Partitioning**
-      * Part 1: [Instructions](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session2/part1/instructions.md), [Starter Code](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session2/part1/circuit.rg), [Solution Code](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session2/part1/circuit_sol.rg)
-      * Part 2: [Instructions](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session2/part2/instructions.md), [Starter Code](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session2/part2/circuit.rg), [Solution Code](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session2/part2/circuit_sol.rg)
-  * **Session 3: Mapping and Optimization**
-      * Part 1: [Instructions](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session3/part1/instructions.md), [Starter Code](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session3/part1/circuit.rg), [Solution Code](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session3/part1/circuit_sol.rg)
-      * Part 2: [Instructions](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session3/part2/instructions.md), [Starter Code](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session3/part2/circuit.rg), [Solution Code](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session3/part2/circuit_sol.rg)
-
--->
+The exercises from the bootcamp are available in a [Github repository](https://github.com/StanfordLegion/bootcamp2017). In order to run these examples on your local machine, follow the [Regent installation instructions](http://regent-lang.org/install/).
 
 ## Previous Bootcamps
 
