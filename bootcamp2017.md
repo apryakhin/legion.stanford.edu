@@ -64,7 +64,7 @@ start.
           * [33:48: Circuit Performance](https://www.youtube.com/watch?v=U_V0sd0nmzk&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=7&t=33m48s)
           * [44:31: Circuit in Legion](https://www.youtube.com/watch?v=U_V0sd0nmzk&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=7&t=44m31s)
 
-## Talks
+## Advanced Topics
 
   * **Advanced Profiling:** [Slides](/pdfs/bootcamp2017/AdvancedProfiling.pdf), [Video](https://www.youtube.com/watch?v=Mk7kER1xyiA&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=8)
   * **Legion C++ API & Control Replication:** [Slides](/pdfs/bootcamp2017/LegionControlReplication.pdf), [Video](https://www.youtube.com/watch?v=nKBhMlPHpvY&list=PLUNK9XcztK7xutP-diU7tw_1PFcXMYEmE&index=9)
