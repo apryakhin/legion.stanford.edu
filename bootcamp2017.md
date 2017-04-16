@@ -4,6 +4,29 @@ permalink: /bootcamp2017/index.html
 title: Legion Bootcamp 2017
 ---
 
+This page contains links to videos, slides, and exercises from the
+Legion Bootcamp 2017. This is the third annual meeting for people
+interested in learning about [Legion](http://legion.stanford.edu/). In
+a departure from the first two instances, this year's bootcamp follows
+a tutorial style aimed primarily at teaching users how to program in
+the Legion model. The bulk of the material consists of a series of
+short lectures and programming exercises, progressing from "Hello
+World" to writing a non-trivial program capable of runnning on
+clusters of CPUs and GPUs. (Users coming to these materials after the
+fact will need to provide their own compute resources.)
+
+The bootcamp focuses on programming in
+[Regent](http://regent-lang.org/), a high level, compiled language
+that implements the Legion programming model. Using Regent allows
+participants to become productive very quickly and enable the bootcamp
+to give participants a more in-depth understanding of the Legion
+approach to task-based programming. Because many projects are also
+interested in programming in Legion at the C++ level, there are talks
+in the second half of the tutorial devoted to programming directly to
+the Legion C++ API. The concepts in Regent and the Legion C++ API are
+the same, and in our experience the Regent instruction is the best way
+even for users primarily interested in using Legion through C++ to
+start.
 
 ## Tutorial
 
