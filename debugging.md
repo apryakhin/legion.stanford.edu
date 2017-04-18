@@ -108,9 +108,8 @@ While Legion does have a [type system](/publications/)
 capable of statically verifying that all region accesses
 abide by the stated privileges requested by a task, these
 guarantees are only available for applications written in
-the Legion language and compiled by the Legion compiler.
-For applications written directly to the Legion runtime
-interface, we provide a way of dynamically verifying
+Regent. For applications written in C++ that use the Legion runtime
+interface directly, we provide a way of dynamically verifying
 privileges on all memory accesses.
 
 To enable privilege checks, the `-DPRIVILEGE_CHECKS` flag

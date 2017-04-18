@@ -40,11 +40,10 @@ Writing to the Legion runtime API, is therefore
 analogous to writing inline assembly code in C as
 the user is explicitly responsible for managing
 the mapping from logical regions/variable names to
-physical instances/registers. Similarly, writing to
-the Legion language is directly analogous to writing
-in C, as the Legion language makes no distinction
+physical instances/registers. Similarly, writing in Regent is directly
+analogous to writing in C, as Regent makes no distinction
 between logical and physical regions. Instead the
-Legion compiler automatically manages the mapping from
+Regent compiler automatically manages the mapping from
 logical regions to physical instances just like the 
 C compiler automatically manages the mapping from a 
 variable name to different registers. Users targeting
@@ -110,8 +109,7 @@ API is there exists a dichotomy between logical
 and physical regions which programmers are explicitly
 expected to manage. This increases the verbosity
 of Legion applications, but is a common artifact
-of targeting a runtime API. The compiled Legion
-language does not suffer from the same effect as
+of targeting a runtime API. Regent does not suffer from the same effect as
 there are only _regions_ and the compiler automatically
 manages the distinction between logical and physical
 regions analogous to how sequential
@@ -120,8 +118,7 @@ hardware registers. This is consistent with the
 design principles laid out in our 
 [Legion overview](/overview/index.html):
 the runtime API is designed for expressiveness while
-productivity features primarily only appear in the
-compiled Legion language. 
+productivity features primarily only appear in Regent. 
 
 #### Inline Mappings ####
 

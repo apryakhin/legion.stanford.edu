@@ -61,7 +61,7 @@ which are a subset of their parent task's privileges.
 To enforce this invariant, privileges can only be passed
 in a functional manner through sub-tasks calls. An astute
 reader will notice that there is no mechanism either in 
-the Legion runtime or the compiled Legion language for 
+Legion or Regent for 
 naming privileges or storing them anywhere. Instead 
 privileges are only passed through `RegionRequirement`
 objects used for launching sub-tasks. To reinforce the
@@ -114,14 +114,13 @@ The privilege system of the Legion programming model
 is essential to both the correctness and performance
 of Legion applications. Privilege passing is
 checked by the Legion runtime and will result in
-runtime errors if violated. In the compiled Legion
-language, privilege passing is checked statically 
+runtime errors if violated. In Regent, privilege passing is checked statically 
 by the type system resulting in easier to diagnose
 compile-time errors. The enforcement of functional
 privilege passing makes possible Legion's hierarchical
 and distributed scheduling algorithm. For more details
 on this we refer you to our 
-[publications](/publications/index.html).
+[publications](/publications/).
 
 #### Task Physical Regions ####
 
