@@ -1,5 +1,5 @@
 .PHONY: deploy
-deploy: doxygen build
+deploy: doxygen messages build
 
 	sudo rsync --recursive /local/www/htdocs/ \
 	/local/www/htdocs.backup-$(shell date '+%Y-%m-%d')/
@@ -23,6 +23,10 @@ deploy: doxygen build
 doxygen: legion
 	doxygen
 
+messages: legion
+	mkdir -p messages
+	cd messages && find ../_legion/runtime -name '*.cc' | python ../_legion/tools/collate_runtime_errors.py
+
 .PHONY: legion
 legion:
 ifneq ($(wildcard _legion/.),)
@@ -45,4 +49,4 @@ spelling:
 
 .PHONY: clean
 clean:
-	rm -rf _site *.bak
+	rm -rf _site messages *.bak
