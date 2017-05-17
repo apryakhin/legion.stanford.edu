@@ -25,7 +25,7 @@ doxygen: legion
 
 messages: legion
 	mkdir -p messages
-	cd messages && find ../_legion/runtime -name '*.cc' | python ../_legion/tools/collate_runtime_errors.py
+	cd messages && find ../_legion/runtime -name '*.cc' | python ../_legion/tools/collate_messages.py --prefix="https://github.com/StanfordLegion/legion/blob/$(shell git -C _legion rev-parse HEAD)/runtime" --strip=3
 
 .PHONY: legion
 legion:
