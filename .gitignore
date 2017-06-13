@@ -3,7 +3,10 @@
 .#*
 .DS_Store
 
-/_site
+/_glossary.txt
 /_legion
+/_site
+/design_patterns
 /doxygen
+/glossary
 /messages
