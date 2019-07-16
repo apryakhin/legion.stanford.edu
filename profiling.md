@@ -72,7 +72,7 @@ $LG_RT_DIR/../tools/legion_prof.py prof_*.gz
 This will generate a subdirectory called `legion_prof` under the
 current directory, including a file named `index.html`. Open this file
 in a browser. If you are not able to view the profile, follow the steps described
-in [Legion Prof Troubleshooting](#legion-prof-troubleshooting)
+in [Legion Prof Troubleshooting](#legion-prof-troubleshooting).
 
 A sample of Legion Prof's output is shown below.
 
@@ -172,13 +172,13 @@ locally:
 {% highlight bash %}
 cd legion_prof
 python -m SimpleHTTPServer
-or
+# or
 python3 -m http.server
 {% endhighlight %}
 
 and load your page on `localhost:8000` from your browser.
 
-If you want to use Chrome on local profiles, launch Chrome with
+Alternatively, if you want to use Chrome on local profiles, launch Chrome with
 `chrome --allow-file-access-from-files` from the terminal. Note that you will
 need to completely close Chrome before doing this.
 
