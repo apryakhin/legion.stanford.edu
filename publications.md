@@ -25,6 +25,7 @@ title: Publications
   * Case Studies:
       * [Visualization (ISAV 2017)](#isav2017) \[[PDF](/pdfs/isav2017.pdf)]
       * [Graph Processesing (VLDB 2018)](#vldb2018) \[[PDF](/pdfs/vldb2018.pdf), [Software Release](https://github.com/LuxGraph/Lux)]
+      * [Legate NumPy (SC 2019)](#legate2019) \[[PDF](/pdfs/legate-preprint.pdf)]
   * DSLs:
       * [Singe (PPoPP 2014)](#ppopp2014) \[[PDF](/pdfs/singe2014.pdf)]
       * [Scout (WOLFHPC 2014)](#wolfhpc2014) \[[PDF](/pdfs/scout2014.pdf)]
@@ -337,6 +338,30 @@ constructs task graphs that soundly and completely express correct
 parallel executions of programs. We also show that the generated task
 graph is the most succinct one for a program when the program
 satisfies certain conditions.
+
+
+<a name="legate2019"></a>__Legate NumPy: Accelerated and Distributed Array Computing__ [PDF](/pdfs/legate-preprint.pdf) <br/>
+_Michael Bauer and Michael Garland_ <br/>
+To appear in the International Conference on Supercomputing ([SC 2019](http://sc19.supercomputing.org)) <br/>
+__Abstract:__ NumPy is a popular Python library used for performing
+array-based numerical computations. The canonical implementation of
+NumPy used by most programmers runs on a single CPU core and only a
+few operations are parallelized across cores. This restriction to
+single-node CPU-only execution limits both the size of data that can
+be processed and the speed with which problems can be solved. In this
+paper we introduce Legate, a programming system that transparently
+accelerates and distributes NumPy programs to machines of any scale
+and capability typically by changing a single module import
+statement. Legate achieves this by translating the NumPy application
+interface into the Legion programming model and leveraging the
+performance and scalability of the Legion runtime. We demonstrate that
+Legate can achieve state-of-the-art scalability when running NumPy
+programs on machines with up to 1280 CPU cores and 256 GPUs, allowing
+users to prototype on their desktop and immediately scale up to
+significantly larger machines. Furthermore, we demonstrate that Legate
+can achieve between one and two orders of magnitude better performance
+than the popular Python library Dask when running comparable programs
+at scale.
 
 
 ## Theses
