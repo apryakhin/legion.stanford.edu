@@ -20,6 +20,7 @@ title: Publications
       * [I/O Subsystem (HiPC 2017)](#hipc2017) \[[PDF](/pdfs/hipc2017.pdf)]
       * [Sean Treichler's Thesis (2016)](#treichler_thesis) \[[PDF](/pdfs/treichler_thesis.pdf)]
   * [Regent (SC 2015)](#sc2015) \[[PDF](/pdfs/regent2015.pdf)]
+      * [Auto-Parallelizer (SC 2019)](#parallel2019) \[[PDF](/pdfs/parallelizer2019.pdf)]
       * [Control Replication (SC 2017)](#cr2017) \[[PDF](/pdfs/cr2017.pdf)]
       * [Elliott Slaughter's Thesis (2017)](#slaughter_thesis) \[[PDF](/pdfs/slaughter_thesis.pdf)]
   * Case Studies:
@@ -363,6 +364,28 @@ can achieve between one and two orders of magnitude better performance
 than the popular Python library Dask when running comparable programs
 at scale.
 
+
+<a name="parallel2019"></a>__A Constraint-Based Approach to Automatic Data Partitioning for Distributed Memory Execution__ [PDF](/pdfs/parallelizer2019.pdf) <br/>
+_Wonchan Lee, Manolis Papadakis, Elliott Slaughter and Alex Aiken_ <br/>
+To appear in the International Conference on Supercomputing ([SC 2019](http://sc19.supercomputing.org)) <br/>
+__Abstract:__ Although data partitioning is required to enable
+parallelism on distributed memory systems, data partitions are not
+first class objects in most distributed programming models. As a
+result, automatic parallelizers and application writers encode a
+particular partitioning strategy in the parallelized program, leading
+to a program not easily configured or composed with other parallel
+programs.
+
+We present a constraint-based approach to automatic data
+partitioning. By introducing abstractions for first-class data
+partitions, we express a space of correct partitioning
+strategies. Candidate partitions are characterized by partitioning
+constraints, which can be automatically inferred from data accesses in
+parallelizable loops. Constraints can be satisfied by synthesized
+partitioning code or user-provided partitions. We demonstrate that
+programs auto-parallelized in our approach are easily composed with
+manually parallelized parts and have scalability comparable to
+hand-optimized counterparts.
 
 ## Theses
 
