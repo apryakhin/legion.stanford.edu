@@ -20,8 +20,8 @@ title: Publications
       * [I/O Subsystem (HiPC 2017)](#hipc2017) \[[PDF](/pdfs/hipc2017.pdf)]
       * [Sean Treichler's Thesis (2016)](#treichler_thesis) \[[PDF](/pdfs/treichler_thesis.pdf)]
   * [Regent (SC 2015)](#sc2015) \[[PDF](/pdfs/regent2015.pdf)]
-      * [Auto-Parallelizer (SC 2019)](#parallel2019) \[[PDF](/pdfs/parallelizer2019.pdf)]
       * [Control Replication (SC 2017)](#cr2017) \[[PDF](/pdfs/cr2017.pdf)]
+      * [Auto-Parallelizer (SC 2019)](#parallel2019) \[[PDF](/pdfs/parallelizer2019.pdf)]
       * [Elliott Slaughter's Thesis (2017)](#slaughter_thesis) \[[PDF](/pdfs/slaughter_thesis.pdf)]
   * Case Studies:
       * [Visualization (ISAV 2017)](#isav2017) \[[PDF](/pdfs/isav2017.pdf)]
