@@ -23,6 +23,8 @@ title: Publications
       * [Control Replication (SC 2017)](#cr2017) \[[PDF](/pdfs/cr2017.pdf)]
       * [Auto-Parallelizer (SC 2019)](#parallel2019) \[[PDF](/pdfs/parallelizer2019.pdf)]
       * [Elliott Slaughter's Thesis (2017)](#slaughter_thesis) \[[PDF](/pdfs/slaughter_thesis.pdf)]
+  * Bindings:
+      * [Python (PAW-ATM 2019)](#pygion2019) \[[PDF](/pdfs/pygion2019.pdf)]
   * Case Studies:
       * [Visualization (ISAV 2017)](#isav2017) \[[PDF](/pdfs/isav2017.pdf)]
       * [Graph Processesing (VLDB 2018)](#vldb2018) \[[PDF](/pdfs/vldb2018.pdf), [Software Release](https://github.com/LuxGraph/Lux)]
@@ -386,6 +388,29 @@ partitioning code or user-provided partitions. We demonstrate that
 programs auto-parallelized in our approach are easily composed with
 manually parallelized parts and have scalability comparable to
 hand-optimized counterparts.
+
+
+<a name="pygion2019"></a>__Pygion: Flexible, Scalable Task-Based Parallelism with Python__ [PDF](/pdfs/pygion2019.pdf) <br/>
+_Elliott Slaughter and Alex Aiken_ <br/>
+To appear in the Parallel Applications Workshop, Alternatives To MPI+X ([PAW-ATM 2019](https://sourceryinstitute.github.io/PAW/)) <br/>
+__Abstract:__ Dynamic languages provide the flexibility needed to
+implement expressive support for task-based parallel programming
+constructs. We present Pygion, a Python interface for the Legion
+task-based programming system, and show that it can provide features
+comparable to Regent, a statically typed programming language with
+dedicated support for the Legion programming model. Furthermore, we
+show that the dynamic nature of Python permits the implementation of
+several key optimizations (index launches, futures, mapping) currently
+implemented in the Regent compiler. Together these features enable
+Pygion code that is comparable in expressiveness but more flexible
+than Regent, and substantially more concise, less error prone, and
+easier to use than C++ Legion code. Pygion is designed to interoperate
+with Regent and can use Regent to generate high-performance CPU and
+GPU kernel implementations. We show that, in combination with
+high-performance kernels written in Regent, Pygion is able to achieve
+efficient, scalable execution on up to 512 nodes of the heterogeneous
+supercomputer Piz Daint.
+
 
 ## Theses
 
