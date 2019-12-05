@@ -11,18 +11,15 @@ title: Publications
       * [Structure Slicing (SC 2014)](#sc2014) \[[PDF](/pdfs/legion-fields.pdf)]
       * [Tracing (SC 2018)](#trace2018) \[[PDF](/pdfs/trace2018.pdf)]
       * [Correctness of Dependence Analysis (SC 2018)](#dep2018) \[[PDF](/pdfs/dep2018.pdf)]
-      * [Michael Bauer's Thesis (2014)](#bauer_thesis) \[[PDF](/pdfs/bauer_thesis.pdf)]
   * Programming Model:
       * [Partitioning Type System (OOPSLA 2013)](#oopsla2013) \[[PDF](/pdfs/oopsla2013.pdf)]
       * [Dependent Partitioning (OOPSLA 2016)](#dpl2016) \[[PDF](/pdfs/dpl2016.pdf)]
   * Realm:
       * [Overview (PACT 2014)](#pact2014) \[[PDF](/pdfs/realm2014.pdf)]
       * [I/O Subsystem (HiPC 2017)](#hipc2017) \[[PDF](/pdfs/hipc2017.pdf)]
-      * [Sean Treichler's Thesis (2016)](#treichler_thesis) \[[PDF](/pdfs/treichler_thesis.pdf)]
   * [Regent (SC 2015)](#sc2015) \[[PDF](/pdfs/regent2015.pdf)]
       * [Control Replication (SC 2017)](#cr2017) \[[PDF](/pdfs/cr2017.pdf)]
       * [Auto-Parallelizer (SC 2019)](#parallel2019) \[[PDF](/pdfs/parallelizer2019.pdf)]
-      * [Elliott Slaughter's Thesis (2017)](#slaughter_thesis) \[[PDF](/pdfs/slaughter_thesis.pdf)]
   * Bindings:
       * [Python (PAW-ATM 2019)](#pygion2019) \[[PDF](/pdfs/pygion2019.pdf)]
   * Case Studies:
@@ -32,6 +29,11 @@ title: Publications
   * DSLs:
       * [Singe (PPoPP 2014)](#ppopp2014) \[[PDF](/pdfs/singe2014.pdf)]
       * [Scout (WOLFHPC 2014)](#wolfhpc2014) \[[PDF](/pdfs/scout2014.pdf)]
+  * Theses:
+      * [Michael Bauer's Thesis (2014)](#bauer_thesis) \[[PDF](/pdfs/bauer_thesis.pdf)]
+      * [Sean Treichler's Thesis (2016)](#treichler_thesis) \[[PDF](/pdfs/treichler_thesis.pdf)]
+      * [Elliott Slaughter's Thesis (2017)](#slaughter_thesis) \[[PDF](/pdfs/slaughter_thesis.pdf)]
+      * [Wonchan Lee's Thesis (2019)](#lee_thesis) \[[PDF](/pdfs/lee_thesis.pdf)]
 
 ## Papers
 
@@ -569,3 +571,55 @@ machines. We measure the performance and scalability of several Regent
 programs on large supercomputers and demonstrate that optimized Regent
 programs perform comparably to manually optimized explicitly parallel
 programs.
+
+<a name="lee_thesis"></a>**A Hybrid Approach to Automatic Program Parallelization via Efficient Tasking with Composable Data Partitioning** [PDF](/pdfs/lee_thesis.pdf)<br/>
+*Wonchan Lee*<br/>
+December 2019<br/>
+**Abstract:** Despite the decades of research, distributed programming
+is still a painful task and programming systems designed to improve
+productivity fall short in practice. Auto-parallelizing compilers
+simplify distributed programming by parallelizing sequential programs
+automatically for distributed execution. However, their applicability
+is severely limited due to the fundamental undecidability of their
+static analysis problem.  Runtime systems for implicit parallelism can
+handle a broader class of programs via an expressive programming
+model, but their runtime overhead often becomes a performance
+bottleneck. To design a practical system for productive distributed
+programming, one must combine the strengths of different
+parallelization paradigms to overcome their weaknesses when used in
+isolation.
+
+This dissertation presents a hybrid approach to automatic program
+parallelization, which combines an auto-parallelizing compiler with an
+implicitly parallel tasking system. Our approach parallelizes programs
+in two steps. First, the auto-parallelizer materializes data
+parallelism in a program into task parallelism. Next, the tasking
+system dynamically analyzes dependencies between tasks and executes
+independent tasks in parallel. This two-stage process gives
+programmers a second chance when the auto-parallelizer “fails”: When a
+part of a program is not amenable to the compiler
+auto-parallelization, the programmer can gracefully fall back to the
+runtime parallelization by writing that part directly with task
+parallelism. Furthermore, hand-written tasks can be seamlessly
+integrated with the auto-parallelized part via composable data
+partitioning enabled by our auto-parallelizer, which allows them to
+share the partitioning strategy and thereby avoid excessive
+communication.
+
+Key to the success of this hybrid approach is to minimize the overhead
+of the tasking system. To achieve this goal, we introduce dynamic
+tracing, a runtime mechanism for efficient tasking. The most expensive
+component in the tasking system is dynamic dependence
+analysis. Although this dynamic analysis is necessary when
+applications exhibit true dynamic behavior, the analysis is redundant
+for common cases where dependencies are (mostly) unchanging. Dynamic
+tracing eliminates this redundancy in dynamic dependence analysis by
+recording the dependence analysis of an execution trace and then
+replaying the recording for the subsequent occurrences of the same
+trace. To guarantee that a recording of a trace correctly replaces the
+trace's original analysis, dynamic tracing also records memory
+locations that hold valid data when it records a trace and replays the
+recording only when those locations are still valid. Dynamic tracing
+significantly improves the efficiency of tasking, and thereby brings
+the strong scalability of explicit parallelism to implicit task
+parallelism.
