@@ -13,7 +13,7 @@ techniques to achieving high performance in Legion applications.
       * [Generating a Profile](#generating-a-profile)
       * [Interacting with a Profile](#interacting-with-a-profile)
       * [Advanced Features](#advanced-features)
-      * [Legion Prof Troubleshooting](#legion-prof-troubleshooting)
+      * [Using Legion Prof Locally](#using-legion-prof-locally)
   * [General Optimization Techniques](#general-optimization-techniques)
   * Legion Configuration:
       * [Machine Configuration](#machine-configuration)
@@ -71,8 +71,10 @@ $LG_RT_DIR/../tools/legion_prof.py prof_*.gz
 
 This will generate a subdirectory called `legion_prof` under the
 current directory, including a file named `index.html`. Open this file
-in a browser. If you are not able to view the profile, follow the steps described
-in [Legion Prof Troubleshooting](#legion-prof-troubleshooting).
+in a browser. Note that, if you are attempting to view this file on
+your local computer, modern browser security settings prevent Legion
+Prof from working properly. Please see the instructions for [Using
+Legion Prof Locally](#using-legion-prof-locally).
 
 A sample of Legion Prof's output is shown below.
 
@@ -161,7 +163,7 @@ critical path line, simply press `a` again.
 
 ![](/images/profiling/critical_path_profile.gif)
 
-### Legion Prof Troubleshooting
+### Using Legion Prof Locally
 
 If you try to access `index.html` locally (by opening 
 `file:///.../index.html`), you may run into issues and may not be able to view
