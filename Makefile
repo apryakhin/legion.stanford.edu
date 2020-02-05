@@ -67,7 +67,7 @@ build:
 	jekyll build
 
 .PHONY: serve
-serve:
+serve: doxygen messages
 	jekyll serve --watch
 
 .PHONY: spelling
