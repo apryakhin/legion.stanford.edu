@@ -31,7 +31,7 @@ tools have been exhausted or in special circumstances:
  * [Dump Backtraces](#dump-backtraces) (`./app -ll:force_kthreads`)
  * [Dump Events](#dump-events)
  * [Trace Memory Allocations](#trace-memory-allocations) (`CC_FLAGS=-DTRACE_ALLOCATION make; ./app -level allocation=2`)
- * [Legion GC](#legion-gc) (`CC_FLAGS=-DLEGION_GC make; ./app -level legion_gc=2 -logfile gc_%.log; ./tools/legion_gc.py gc_*.log`)
+ * [Legion GC](#legion-gc) (`CC_FLAGS=-DLEGION_GC make; ./app -level legion_gc=2 -logfile gc_%.log; ./tools/legion_gc.py -l gc_*.log`)
 
 ## Try These First
 
@@ -527,7 +527,7 @@ objects or handles.
 {% highlight bash %}
 CC_FLAGS=-DLEGION_GC make
 ./app -level legion_gc=2 -logfile gc_%.log
-./tools/legion_gc.py gc_*.log
+./tools/legion_gc.py -l gc_*.log
 {% endhighlight %}
 
 This tool will print a message if any objects are leaked by the
