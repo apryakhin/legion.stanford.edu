@@ -16,8 +16,8 @@ Generally speaking, users should start by trying these tools
  * [Freeze On Error](#freeze-on-error) (`LEGION_FREEZE_ON_ERROR=1 ./app`)
  * [Privilege Checks](#privilege-checks) (`CC_FLAGS=-DPRIVILEGE_CHECKS make; ./app`)
  * [Bounds Checks](#bounds-checks) (`CC_FLAGS=-DBOUNDS_CHECKS make; ./app`)
- * [Disjointness Checks](#disjointness-checks) (`./app -lg:disjointness`)
- * [Legion Spy](#legion-spy) (`./app -lg:spy -logfile spy_%.log; ./legion_spy.py -dez spy_*.log`)
+ * [Partition Checks](#partition-checks) (`./app -lg:partcheck`)
+ * [Legion Spy](#legion-spy) (`./app -lg:spy -logfile spy_%.log; ./tools/legion_spy.py -dez spy_*.log`)
 
 The following tools are typically used after the initial debugging
 tools have been exhausted or in special circumstances:
@@ -30,6 +30,8 @@ tools have been exhausted or in special circumstances:
  * [Separate Runtime Instances](#separate-runtime-instances) (`./app -lg:separate -ll:util 0`)
  * [Dump Backtraces](#dump-backtraces) (`./app -ll:force_kthreads`)
  * [Dump Events](#dump-events)
+ * [Trace Memory Allocations](#trace-memory-allocations) (`CC_FLAGS=-DTRACE_ALLOCATION make; ./app -level allocation=2`)
+ * [Legion GC](#legion-gc) (`CC_FLAGS=-DLEGION_GC make; ./app -level legion_gc=2 -logfile gc_%.log; ./tools/legion_gc.py gc_*.log`)
 
 ## Try These First
 
@@ -172,13 +174,13 @@ these checks are performed on every memory access, they
 can significantly degrade the performance of a Legion
 application.
 
-### Disjointness Checks
+### Partition Checks
 
 One of the more commonly occurring bugs in Legion applications
 is creating partitions which an application declares to
 be disjoint, but for which the provided coloring is not
 actually disjoint. For performance reasons, when a call
-to `create_index_partition` is made, Legion does <em>NOT</em>
+to `create_index_partition` is made, Legion does *NOT*
 check the declared disjointness of the coloring. Instead
 the runtime simply trusts the applications to correctly
 specify the disjointness of the partition. As users have
@@ -186,18 +188,16 @@ experimented with more complicated coloring schemes, we've
 noticed an increasing number of cases where colorings are
 claimed to be disjoint when they actually are not.
 
-To address this problem, we provide the `-lg:disjointness`
+To address this problem, we provide the `-lg:partcheck`
 command line flag which instructs the Legion high-level
 runtime to verify the disjointness of all colorings which
 are claimed to be disjoint and report a runtime error if
 they are not. Depending on the size and type of coloring
 as well as the number of colors, these checks can take
 arbitrarily long and may degrade performance. Due to the
-extreme performance cost associated with these checks,
-the `-lg:disjointness` flag will only perform the checks
-when the runtime is compiled in debug mode, and will
-result in a runtime warning if it is used with a release
-build of the runtime.
+extreme performance cost associated with these checks, the
+`-lg:partcheck` flag will issue a warning if it is used in conjuction
+with profiling.
 
 ### Legion Spy
 
@@ -504,3 +504,31 @@ legion/tools/detect_loops event.txt
 {% endhighlight %}
 
 If a cycle is found it will be displayed on stdout.
+
+### Trace Memory Allocations
+
+This is a tool for checking the number of internal Legion objects
+allocated over time, and their total memory usage.
+
+{% highlight bash %}
+CC_FLAGS=-DTRACE_ALLOCATION make
+./app -level allocation=2
+{% endhighlight %}
+
+Legion will periodically print the total number of internal Legion
+objects that have been allocated, their total memory usage, and the
+difference (in number and size) compared to the last snapshot.
+
+### Legion GC
+
+This is a tool for checking for application leaks of Legion API
+objects or handles.
+
+{% highlight bash %}
+CC_FLAGS=-DLEGION_GC make
+./app -level legion_gc=2 -logfile gc_%.log
+./tools/legion_gc.py gc_*.log
+{% endhighlight %}
+
+This tool will print a message if any objects are leaked by the
+application.
