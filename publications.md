@@ -31,6 +31,7 @@ title: Publications
       * [Singe (PPoPP 2014)](#ppopp2014) \[[PDF](/pdfs/singe2014.pdf)]
       * [Scout (WOLFHPC 2014)](#wolfhpc2014) \[[PDF](/pdfs/scout2014.pdf)]
   * Applications:
+      * [S3D-Legion (2017)](#s3d2017) \[[PDF](https://www.taylorfrancis.com/books/e/9781315277400/chapters/10.1201/b21930-12)]
       * [Soleil-X (2018)](#soleilx2018) \[[PDF](/pdfs/soleilx2018.pdf)]
       * [HTR Solver (2020)](#htr2020) \[[PDF](https://doi.org/10.1016/j.cpc.2020.107262)]
   * Theses:
@@ -288,6 +289,11 @@ weak scaling tests were run on up to 512 nodes of the Piz Daint
 supercomputer. Benchmarks showed that the visualization components scaled and did not reduce the simulation throughput. The
 compositor latency increased logarithmically with increasing node
 count.
+
+
+<a name="s3d2017"></a>__S3D-Legion: An Exascale Software for Direct Numerical Simulation of Turbulent Combustion with Complex Multicomponent Chemistry__ [PDF](https://www.taylorfrancis.com/books/e/9781315277400/chapters/10.1201/b21930-12) <br/>
+_Sean Treichler, Michael Bauer, Ankit Bhagatwala, Giulio Borghesi, Ramanan Sankaran, Hemanth Kolla, Patrick S. McCormick, Elliott Slaughter, Wonchan Lee, Alex Aiken and Jacqueline Chen_ <br/>
+In [Exascale Scientific Applications: Scalability and Performance Portability](https://www.crcpress.com/p/book/9781138197541) (CRC Press, 2017)
 
 
 <a name="vldb2018"></a>__A Distributed Multi-GPU System for Fast Graph Processing__ [PDF](/pdfs/vldb2018.pdf), [Software Release](https://github.com/LuxGraph/Lux) <br/>
