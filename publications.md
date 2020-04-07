@@ -31,7 +31,7 @@ title: Publications
       * [Singe (PPoPP 2014)](#ppopp2014) \[[PDF](/pdfs/singe2014.pdf)]
       * [Scout (WOLFHPC 2014)](#wolfhpc2014) \[[PDF](/pdfs/scout2014.pdf)]
   * Applications:
-      * [Soleil-X](#soleilx2018) \[[PDF](/pdfs/soleilx2018.pdf)]
+      * [Soleil-X (2018)](#soleilx2018) \[[PDF](/pdfs/soleilx2018.pdf)]
   * Theses:
       * [Michael Bauer's Thesis (2014)](#bauer_thesis) \[[PDF](/pdfs/bauer_thesis.pdf)]
       * [Sean Treichler's Thesis (2016)](#treichler_thesis) \[[PDF](/pdfs/treichler_thesis.pdf)]
@@ -350,7 +350,7 @@ satisfies certain conditions.
 
 <a name="soleilx2018"></a>__Soleil-X: Turbulence, Particles, and Radiation in the Regent Programming Language__ [PDF](/pdfs/soleilx2018.pdf) <br/>
 _Hilario Torres and Manolis Papadakis and Llu&iacute;s Jofre and Wonchan Lee and Alex Aiken and Gianluca Iaccarino_ <br/>
-In Bulletin of the American Physical Society <br/>
+In Bulletin of the American Physical Society (2018) <br/>
 __Abstract:__ The Predictive Science Academic Alliance Program (PSAAP)
 II at Stanford University is developing an Exascale-ready
 multi-physics solver to investigate particle-laden turbulent flows in
