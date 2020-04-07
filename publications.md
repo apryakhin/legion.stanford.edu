@@ -17,7 +17,8 @@ title: Publications
   * Realm:
       * [Overview (PACT 2014)](#pact2014) \[[PDF](/pdfs/realm2014.pdf)]
       * [I/O Subsystem (HiPC 2017)](#hipc2017) \[[PDF](/pdfs/hipc2017.pdf)]
-  * [Regent (SC 2015)](#sc2015) \[[PDF](/pdfs/regent2015.pdf)]
+  * Regent:
+      * [Overview (SC 2015)](#sc2015) \[[PDF](/pdfs/regent2015.pdf)]
       * [Control Replication (SC 2017)](#cr2017) \[[PDF](/pdfs/cr2017.pdf)]
       * [Auto-Parallelizer (SC 2019)](#parallel2019) \[[PDF](/pdfs/parallelizer2019.pdf)]
   * Bindings:
