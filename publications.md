@@ -347,7 +347,7 @@ graph is the most succinct one for a program when the program
 satisfies certain conditions.
 
 
-<a name="soleil2018"></a>__Soleil-X: Turbulence, Particles, and Radiation in the Regent Programming Language__ [PDF](/pdfs/soleil2018.pdf) <br/>
+<a name="soleilx2018"></a>__Soleil-X: Turbulence, Particles, and Radiation in the Regent Programming Language__ [PDF](/pdfs/soleilx2018.pdf) <br/>
 _Hilario Torres and Manolis Papadakis and Llu&iacute;s Jofre and Wonchan Lee and Alex Aiken and Gianluca Iaccarino_ <br/>
 In Bulletin of the American Physical Society <br/>
 __Abstract:__ The Predictive Science Academic Alliance Program (PSAAP)
