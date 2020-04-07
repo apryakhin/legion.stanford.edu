@@ -40,9 +40,9 @@ title: Publications
 
 ## Papers
 
-<a name="sc2012"></a>__Legion: Expressing Locality and Independence with Logical Regions__ [PDF](/pdfs/sc2012.pdf) \
-_Michael Bauer, Sean Treichler, Elliott Slaughter, Alex Aiken_ \
-In the International Conference on Supercomputing ([SC 2012](http://sc12.supercomputing.org)) \
+<a name="sc2012"></a>__Legion: Expressing Locality and Independence with Logical Regions__ [PDF](/pdfs/sc2012.pdf) <br/>
+_Michael Bauer, Sean Treichler, Elliott Slaughter, Alex Aiken_ <br/>
+In the International Conference on Supercomputing ([SC 2012](http://sc12.supercomputing.org)) <br/>
 __Abstract:__ Modern parallel architectures have both heterogeneous processors and deep, complex 
 memory hierarchies. We present Legion, a programming model and runtime system
 for achieving high performance on these machines. Legion is
@@ -59,10 +59,10 @@ Legion implementation on three applications: fluid-flow on a
 regular grid, a three-level AMR code solving a heat diffusion
 equation, and a circuit simulation.
 
-<a name="oopsla2013"></a>__Language Support for Dynamic, Hierarchical Data Partitioning__ [PDF](/pdfs/oopsla2013.pdf) \
-_Sean Treichler, Michael Bauer, Alex Aiken_ \
+<a name="oopsla2013"></a>__Language Support for Dynamic, Hierarchical Data Partitioning__ [PDF](/pdfs/oopsla2013.pdf) <br/>
+_Sean Treichler, Michael Bauer, Alex Aiken_ <br/>
 In Object Oriented Programming, Systems, Languages, 
-and Applications ([OOPSLA 2013](http://splashcon.org/2013/program/oopsla-research-papers)) \
+and Applications ([OOPSLA 2013](http://splashcon.org/2013/program/oopsla-research-papers)) <br/>
 __Abstract:__ Applications written for distributed-memory parallel architectures must 
 partition their data to enable parallel execution. As memory hierarchies become deeper, 
 it is increasingly necessary that the data partitioning also be hierarchical to match. 
@@ -88,9 +88,9 @@ We report results for three real-world applications running
 on distributed memory machines, achieving up to 62.5X
 speedup on 96 GPUs on the Keeneland supercomputer.
 
-<a name="pact2014"></a>__Realm: An Event-Based Low-Level Runtime for Distributed Memory Architectures__ [PDF](/pdfs/realm2014.pdf) \
-_Sean Treichler, Michael Bauer, Alex Aiken_ \
-In Parallel Architectures and Compilation Techniques ([PACT 2014](http://www.pactconf.org/program.php)) \
+<a name="pact2014"></a>__Realm: An Event-Based Low-Level Runtime for Distributed Memory Architectures__ [PDF](/pdfs/realm2014.pdf) <br/>
+_Sean Treichler, Michael Bauer, Alex Aiken_ <br/>
+In Parallel Architectures and Compilation Techniques ([PACT 2014](http://www.pactconf.org/program.php)) <br/>
 __Abstract:__ We present Realm, an event-based runtime system for heterogeneous,
 distributed memory machines. Realm is fully asynchronous: all runtime actions
 are non-blocking. Realm supports spawning computations, moving data, and 
@@ -106,9 +106,9 @@ demonstrate that Realm confers considerable latency hiding to clients, attaining
 significant speedups over traditional bulk-synchronous and independently optimized
 MPI codes.
 
-<a name="sc2014"></a>__Structure Slicing: Extending Logical Regions with Fields__ [PDF](/pdfs/legion-fields.pdf) \
-_Michael Bauer, Sean Treichler, Elliott Slaughter, Alex Aiken_ \
-In the International Conference on Supercomputing ([SC 2014](http://sc14.supercomputing.org/schedule/event_detail?evid=pap522)) \
+<a name="sc2014"></a>__Structure Slicing: Extending Logical Regions with Fields__ [PDF](/pdfs/legion-fields.pdf) <br/>
+_Michael Bauer, Sean Treichler, Elliott Slaughter, Alex Aiken_ <br/>
+In the International Conference on Supercomputing ([SC 2014](http://sc14.supercomputing.org/schedule/event_detail?evid=pap522)) <br/>
 __Abstract:__ Applications on modern supercomputers are increasingly limited by the
 cost of data movement, but mainstream programming systems have few abstractions for
 describing the structure of a program's data. Consequently, the burden of managing
@@ -128,10 +128,10 @@ an independently hand-tuned OpenACC code.
 
 <a name="ppopp2014"></a>_Note: The following paper is a result of our collaboration with the [ExaCT
 Combustion Co-Design Center](http://exactcodesign.org/) and shows how a DSL
-compiler can be used to generate fast tasks for Legion applications._\
-__Singe: Leveraging Warp Specialization for High Performance on GPUs__ [PDF](/pdfs/singe2014.pdf) \
-_Michael Bauer, Sean Treichler, Alex Aiken_\
-In Principles and Practices of Parallel Programming ([PPoPP 2014](https://sites.google.com/site/ppopp2014/home/schedule/)) \
+compiler can be used to generate fast tasks for Legion applications._<br/>
+__Singe: Leveraging Warp Specialization for High Performance on GPUs__ [PDF](/pdfs/singe2014.pdf) <br/>
+_Michael Bauer, Sean Treichler, Alex Aiken_<br/>
+In Principles and Practices of Parallel Programming ([PPoPP 2014](https://sites.google.com/site/ppopp2014/home/schedule/)) <br/>
 __Abstract:__ We present Singe, a Domain Specific Language (DSL) compiler for combustion
 chemistry that leverages _warp specialization_ to produce high performance code for GPUs.
 Instead of relying on traditional GPU programming models that emphasize data-parallel
@@ -147,11 +147,11 @@ warp-specializing compiler.  We show that the warp-specialized code emitted by S
 is up to 3.75X faster than previously optimized data-parallel GPU kernels.
 
 <a name="wolfhpc2014"></a>_Note: The following paper is an example of a DSL
-compiler toolchain that targets Legion as a backend._\
-__Exploring the Construction of a Domain-Aware Toolchain for High-Performance Computing__ [PDF](/pdfs/scout2014.pdf) \
+compiler toolchain that targets Legion as a backend._<br/>
+__Exploring the Construction of a Domain-Aware Toolchain for High-Performance Computing__ [PDF](/pdfs/scout2014.pdf) <br/>
 _Patrick McCormick, Christine Sweeney, Nick Moss, Dean Prichard,
-Samuel K. Gutierrez, Kei Davis, Jamaludin Mohd-Yusof_\
-In the International Workshop on Domain-Specific Languages and High-Level Frameworks for High Performance Computing ([WOLFHPC 2014](http://conferences.computer.org/wolfhpc/2014/)) \
+Samuel K. Gutierrez, Kei Davis, Jamaludin Mohd-Yusof_<br/>
+In the International Workshop on Domain-Specific Languages and High-Level Frameworks for High Performance Computing ([WOLFHPC 2014](http://conferences.computer.org/wolfhpc/2014/)) <br/>
 __Abstract:__ The push towards exascale computing has sparked
 a new set of explorations for providing new productive programming
 environments. While many efforts are focusing on
@@ -168,9 +168,9 @@ a significant role in providing a suitable environment for DSL
 development.
 
 
-<a name="sc2015"></a>__Regent: A High-Productivity Programming Language for HPC with Logical Regions__ [PDF](/pdfs/regent2015.pdf) \
-_Elliott Slaughter, Wonchan Lee, Sean Treichler, Michael Bauer, and Alex Aiken_ \
-In the International Conference on Supercomputing ([SC 2015](http://sc15.supercomputing.org/schedule/event_detail?evid=pap326)) \
+<a name="sc2015"></a>__Regent: A High-Productivity Programming Language for HPC with Logical Regions__ [PDF](/pdfs/regent2015.pdf) <br/>
+_Elliott Slaughter, Wonchan Lee, Sean Treichler, Michael Bauer, and Alex Aiken_ <br/>
+In the International Conference on Supercomputing ([SC 2015](http://sc15.supercomputing.org/schedule/event_detail?evid=pap326)) <br/>
 __Abstract:__ We present Regent, a high-productivity programming language for high
 performance computing with logical regions. Regent users compose
 programs with tasks (functions eligible for parallel execution) and
@@ -190,10 +190,10 @@ applications and demonstrate that Regent achieves performance
 comparable to hand-tuned Legion.
 
 
-<a name="dpl2016"></a>__Dependent Partitioning__ [PDF](/pdfs/dpl2016.pdf) \
-_Sean Treichler, Michael Bauer, Rahul Sharma, Elliott Slaughter, and Alex Aiken_ \
+<a name="dpl2016"></a>__Dependent Partitioning__ [PDF](/pdfs/dpl2016.pdf) <br/>
+_Sean Treichler, Michael Bauer, Rahul Sharma, Elliott Slaughter, and Alex Aiken_ <br/>
 In Object Oriented Programming, Systems, Languages,
-and Applications ([OOPSLA 2016](http://2016.splashcon.org/track/splash-2016-oopsla)) \
+and Applications ([OOPSLA 2016](http://2016.splashcon.org/track/splash-2016-oopsla)) <br/>
 __Abstract:__ A key problem in parallel programming is how data is
 *partitioned*: divided into subsets that can be operated on in
 parallel and, in distributed memory machines, spread across multiple
@@ -226,9 +226,9 @@ that are too large to fit on a single node and yields an additional
 29X speedup of partitioning operations on 64 nodes.
 
 
-<a name="cr2017"></a>__Control Replication: Compiling Implicit Parallelism to Efficient SPMD with Logical Regions__ [PDF](/pdfs/cr2017.pdf) \
-_Elliott Slaughter, Wonchan Lee, Sean Treichler, Wen Zhang, Michael Bauer, Galen Shipman, Patrick McCormick and Alex Aiken_ \
-In the International Conference on Supercomputing ([SC 2017](http://sc17.supercomputing.org/presentation/?id=pap417&sess=sess165)) \
+<a name="cr2017"></a>__Control Replication: Compiling Implicit Parallelism to Efficient SPMD with Logical Regions__ [PDF](/pdfs/cr2017.pdf) <br/>
+_Elliott Slaughter, Wonchan Lee, Sean Treichler, Wen Zhang, Michael Bauer, Galen Shipman, Patrick McCormick and Alex Aiken_ <br/>
+In the International Conference on Supercomputing ([SC 2017](http://sc17.supercomputing.org/presentation/?id=pap417&sess=sess165)) <br/>
 __Abstract:__ We present control replication, a technique for generating
 high-performance and scalable SPMD code from implicitly parallel
 programs. In contrast to traditional parallel programming models that
@@ -251,9 +251,9 @@ nodes with absolute performance comparable to hand-written MPI(+X)
 codes.
 
 
-<a name="hipc2017"></a>__Integrating External Resources with a Task-Based Programming Model__ [PDF](/pdfs/hipc2017.pdf) \
-_Zhihao Jia, Sean Treichler, Galen Shipman, Michael Bauer, Noah Watkins, Carlos Maltzahn, Patrick McCormick and Alex Aiken_ \
-In the International Conference on High Performance Computing, Data, and Analytics (HiPC 2017) \
+<a name="hipc2017"></a>__Integrating External Resources with a Task-Based Programming Model__ [PDF](/pdfs/hipc2017.pdf) <br/>
+_Zhihao Jia, Sean Treichler, Galen Shipman, Michael Bauer, Noah Watkins, Carlos Maltzahn, Patrick McCormick and Alex Aiken_ <br/>
+In the International Conference on High Performance Computing, Data, and Analytics (HiPC 2017) <br/>
 __Abstract:__ Accessing external resources (e.g., loading input
 data, checkpointing snapshots, and out-of-core processing) can
 have a significant impact on the performance of applications. However, no existing programming systems for high-performance computing directly manage and optimize external
@@ -275,9 +275,9 @@ reduces the external I/O overhead by up to 20x, compared
 to the Legion and the Fortran implementations.
 
 
-<a name="isav2017"></a>__*In Situ* Visualization with Task-based Parallelism__ [PDF](/pdfs/isav2017.pdf) \
-_Alan Heirich, Elliott Slaughter, Manolis Papadakis, Wonchan Lee, Tim Biedert and Alex Aiken_ \
-In the Workshop on In Situ Infrastructures for Enabling Extreme-scale Analysis and Visualization (ISAV 2017) \
+<a name="isav2017"></a>__*In Situ* Visualization with Task-based Parallelism__ [PDF](/pdfs/isav2017.pdf) <br/>
+_Alan Heirich, Elliott Slaughter, Manolis Papadakis, Wonchan Lee, Tim Biedert and Alex Aiken_ <br/>
+In the Workshop on In Situ Infrastructures for Enabling Extreme-scale Analysis and Visualization (ISAV 2017) <br/>
 __Abstract:__ This short paper describes an experimental prototype of *in situ*
 visualization in a task-based parallel programming framework. A
 set of reusable visualization tasks were composed with an existing
@@ -289,9 +289,9 @@ compositor latency increased logarithmically with increasing node
 count.
 
 
-<a name="vldb2018"></a>__A Distributed Multi-GPU System for Fast Graph Processing__ [PDF](/pdfs/vldb2018.pdf), [Software Release](https://github.com/LuxGraph/Lux) \
-_Zhihao Jia, Yongkee Kwon, Galen Shipman, Pat McCormick, Mattan Erez and Alex Aiken_ \
-In the International Conference on Very Large Data Bases (VLDB 2018) \
+<a name="vldb2018"></a>__A Distributed Multi-GPU System for Fast Graph Processing__ [PDF](/pdfs/vldb2018.pdf), [Software Release](https://github.com/LuxGraph/Lux) <br/>
+_Zhihao Jia, Yongkee Kwon, Galen Shipman, Pat McCormick, Mattan Erez and Alex Aiken_ <br/>
+In the International Conference on Very Large Data Bases (VLDB 2018) <br/>
 __Abstract:__ We present Lux, a distributed multi-GPU system that
 achieves fast graph processing by exploiting the aggregate memory
 bandwidth of multiple GPUs and taking advantage of locality in the
@@ -306,9 +306,9 @@ achieves up to 20&times; speedup over state-of-the-art shared memory systems
 and up to two orders of magnitude speedup over distributed systems.
 
 
-<a name="trace2018"></a>__Dynamic Tracing: Memoization of Task Graphs for Dynamic Task-Based Runtimes__ [PDF](/pdfs/trace2018.pdf) \
-_Wonchan Lee, Elliott Slaughter, Michael Bauer, Sean Treichler, Todd Warszawski, Michael Garland and Alex Aiken_ \
-In the International Conference on Supercomputing ([SC 2018](https://sc18.supercomputing.org/presentation/?id=pap490&sess=sess183)) \
+<a name="trace2018"></a>__Dynamic Tracing: Memoization of Task Graphs for Dynamic Task-Based Runtimes__ [PDF](/pdfs/trace2018.pdf) <br/>
+_Wonchan Lee, Elliott Slaughter, Michael Bauer, Sean Treichler, Todd Warszawski, Michael Garland and Alex Aiken_ <br/>
+In the International Conference on Supercomputing ([SC 2018](https://sc18.supercomputing.org/presentation/?id=pap490&sess=sess183)) <br/>
 __Abstract:__ Many recent programming systems for both supercomputing
 and data center workloads generate task graphs to express computations
 that run on parallel and distributed machines. Due to the overhead
@@ -325,9 +325,9 @@ average of 4.9X and up to 7.0X on a suite of already optimized
 benchmarks.
 
 
-<a name="dep2018"></a>__Correctness of Dynamic Dependence Analysis for Implicitly Parallel Tasking Systems__ [PDF](/pdfs/dep2018.pdf) \
-_Wonchan Lee, George Stelle, Patrick McCormick and Alex Aiken_ \
-In the International Workshop on Software Correctness for HPC Applications ([Correctness 2018](https://correctness-workshop.github.io/2018/)) \
+<a name="dep2018"></a>__Correctness of Dynamic Dependence Analysis for Implicitly Parallel Tasking Systems__ [PDF](/pdfs/dep2018.pdf) <br/>
+_Wonchan Lee, George Stelle, Patrick McCormick and Alex Aiken_ <br/>
+In the International Workshop on Software Correctness for HPC Applications ([Correctness 2018](https://correctness-workshop.github.io/2018/)) <br/>
 __Abstract:__ In this paper, we rigorously verify the correctness of
 dynamic dependence analysis, a key algorithm for parallelizing
 programs in implicitly parallel tasking systems. A dynamic dependence
@@ -348,9 +348,9 @@ graph is the most succinct one for a program when the program
 satisfies certain conditions.
 
 
-<a name="soleilx2018"></a>__Soleil-X: Turbulence, Particles, and Radiation in the Regent Programming Language__ [PDF](/pdfs/soleilx2018.pdf) \
-_Hilario Torres, Manolis Papadakis, Llu&iacute;s Jofre, Wonchan Lee, Alex Aiken and Gianluca Iaccarino_ \
-In Bulletin of the American Physical Society (2018) \
+<a name="soleilx2018"></a>__Soleil-X: Turbulence, Particles, and Radiation in the Regent Programming Language__ [PDF](/pdfs/soleilx2018.pdf) <br/>
+_Hilario Torres, Manolis Papadakis, Llu&iacute;s Jofre, Wonchan Lee, Alex Aiken and Gianluca Iaccarino_ <br/>
+In Bulletin of the American Physical Society (2018) <br/>
 __Abstract:__ The Predictive Science Academic Alliance Program (PSAAP)
 II at Stanford University is developing an Exascale-ready
 multi-physics solver to investigate particle-laden turbulent flows in
@@ -379,9 +379,9 @@ scaling, performance, portability, and multi-physics simulation
 results.
 
 
-<a name="legate2019"></a>__Legate NumPy: Accelerated and Distributed Array Computing__ [PDF](/pdfs/legate-preprint.pdf) \
-_Michael Bauer and Michael Garland_ \
-In the International Conference on Supercomputing ([SC 2019](http://sc19.supercomputing.org)) \
+<a name="legate2019"></a>__Legate NumPy: Accelerated and Distributed Array Computing__ [PDF](/pdfs/legate-preprint.pdf) <br/>
+_Michael Bauer and Michael Garland_ <br/>
+In the International Conference on Supercomputing ([SC 2019](http://sc19.supercomputing.org)) <br/>
 __Abstract:__ NumPy is a popular Python library used for performing
 array-based numerical computations. The canonical implementation of
 NumPy used by most programmers runs on a single CPU core and only a
@@ -403,9 +403,9 @@ than the popular Python library Dask when running comparable programs
 at scale.
 
 
-<a name="parallel2019"></a>__A Constraint-Based Approach to Automatic Data Partitioning for Distributed Memory Execution__ [PDF](/pdfs/parallelizer2019.pdf) \
-_Wonchan Lee, Manolis Papadakis, Elliott Slaughter and Alex Aiken_ \
-In the International Conference on Supercomputing ([SC 2019](http://sc19.supercomputing.org)) \
+<a name="parallel2019"></a>__A Constraint-Based Approach to Automatic Data Partitioning for Distributed Memory Execution__ [PDF](/pdfs/parallelizer2019.pdf) <br/>
+_Wonchan Lee, Manolis Papadakis, Elliott Slaughter and Alex Aiken_ <br/>
+In the International Conference on Supercomputing ([SC 2019](http://sc19.supercomputing.org)) <br/>
 __Abstract:__ Although data partitioning is required to enable
 parallelism on distributed memory systems, data partitions are not
 first class objects in most distributed programming models. As a
@@ -426,9 +426,9 @@ manually parallelized parts and have scalability comparable to
 hand-optimized counterparts.
 
 
-<a name="pygion2019"></a>__Pygion: Flexible, Scalable Task-Based Parallelism with Python__ [PDF](/pdfs/pygion2019.pdf) \
-_Elliott Slaughter and Alex Aiken_ \
-In the Parallel Applications Workshop, Alternatives To MPI+X ([PAW-ATM 2019](https://sourceryinstitute.github.io/PAW/)) \
+<a name="pygion2019"></a>__Pygion: Flexible, Scalable Task-Based Parallelism with Python__ [PDF](/pdfs/pygion2019.pdf) <br/>
+_Elliott Slaughter and Alex Aiken_ <br/>
+In the Parallel Applications Workshop, Alternatives To MPI+X ([PAW-ATM 2019](https://sourceryinstitute.github.io/PAW/)) <br/>
 __Abstract:__ Dynamic languages provide the flexibility needed to
 implement expressive support for task-based parallel programming
 constructs. We present Pygion, a Python interface for the Legion
@@ -450,10 +450,10 @@ supercomputer Piz Daint.
 
 ## Theses
 
-<a name="bauer_thesis"></a>*Note: The following thesis is a thorough guide to the Legion programming model and covers many implementation details that are not documented elsewhere.*\
-**Legion: Programming Distributed Heterogeneous Architectures with Logical Regions** [PDF](/pdfs/bauer_thesis.pdf)\
-*Michael Edward Bauer*\
-December 2014\
+<a name="bauer_thesis"></a>*Note: The following thesis is a thorough guide to the Legion programming model and covers many implementation details that are not documented elsewhere.*<br/>
+**Legion: Programming Distributed Heterogeneous Architectures with Logical Regions** [PDF](/pdfs/bauer_thesis.pdf)<br/>
+*Michael Edward Bauer*<br/>
+December 2014<br/>
 **Abstract:** This thesis covers the design and implementation of
 Legion, a new programming model and runtime system for targeting
 distributed heterogeneous machine architectures. Legion introduces
@@ -505,9 +505,9 @@ state-of-the-art versions of S3D when run at 8192 nodes on the number
 two supercomputer in the world.
 
 <a name="treichler_thesis"></a>**Realm: Performance Portability through Composable
-Asynchrony** [PDF](/pdfs/treichler_thesis.pdf)\
-*Sean Jeffrey Treichler*\
-December 2016\
+Asynchrony** [PDF](/pdfs/treichler_thesis.pdf)<br/>
+*Sean Jeffrey Treichler*<br/>
+December 2016<br/>
 **Abstract:** Modern supercomputers are growing increasingly
 complicated. The laws of physics have forced processor counts into the
 thousands or even millions, resulted in the creation of deep
@@ -561,9 +561,9 @@ applications at full-scale show how Realm's composable asynchrony and
 support for heterogeneity benefit the overall Legion system on a
 variety of modern supercomputers.
 
-<a name="slaughter_thesis"></a>**Regent: A High-Productivity Programming Language for Implicit Parallelism with Logical Regions** [PDF](/pdfs/slaughter_thesis.pdf)\
-*Elliott Slaughter*\
-August 2017\
+<a name="slaughter_thesis"></a>**Regent: A High-Productivity Programming Language for Implicit Parallelism with Logical Regions** [PDF](/pdfs/slaughter_thesis.pdf)<br/>
+*Elliott Slaughter*<br/>
+August 2017<br/>
 **Abstract:** Modern supercomputers are dominated by distributed-memory
 machines. State of the art high-performance scientific applications
 targeting these machines are typically written in low-level,
@@ -606,9 +606,9 @@ programs on large supercomputers and demonstrate that optimized Regent
 programs perform comparably to manually optimized explicitly parallel
 programs.
 
-<a name="lee_thesis"></a>**A Hybrid Approach to Automatic Program Parallelization via Efficient Tasking with Composable Data Partitioning** [PDF](/pdfs/lee_thesis.pdf)\
-*Wonchan Lee*\
-December 2019\
+<a name="lee_thesis"></a>**A Hybrid Approach to Automatic Program Parallelization via Efficient Tasking with Composable Data Partitioning** [PDF](/pdfs/lee_thesis.pdf)<br/>
+*Wonchan Lee*<br/>
+December 2019<br/>
 **Abstract:** Despite the decades of research, distributed programming
 is still a painful task and programming systems designed to improve
 productivity fall short in practice. Auto-parallelizing compilers
