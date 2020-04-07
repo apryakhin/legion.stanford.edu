@@ -32,6 +32,7 @@ title: Publications
       * [Scout (WOLFHPC 2014)](#wolfhpc2014) \[[PDF](/pdfs/scout2014.pdf)]
   * Applications:
       * [Soleil-X (2018)](#soleilx2018) \[[PDF](/pdfs/soleilx2018.pdf)]
+      * [HTR Solver (2020)](#htr2020) \[[PDF](https://doi.org/10.1016/j.cpc.2020.107262)]
   * Theses:
       * [Michael Bauer's Thesis (2014)](#bauer_thesis) \[[PDF](/pdfs/bauer_thesis.pdf)]
       * [Sean Treichler's Thesis (2016)](#treichler_thesis) \[[PDF](/pdfs/treichler_thesis.pdf)]
@@ -446,6 +447,26 @@ GPU kernel implementations. We show that, in combination with
 high-performance kernels written in Regent, Pygion is able to achieve
 efficient, scalable execution on up to 512 nodes of the heterogeneous
 supercomputer Piz Daint.
+
+
+<a name="htr2020"></a>__HTR Solver: An Open-Source Exascale-Oriented Task-Based Multi-GPU High-Order Code for Hypersonic Aerothermodynamics__ [PDF](https://doi.org/10.1016/j.cpc.2020.107262) <br/>
+_Mario Di Renzo, Lin Fu and Javier Urzay_ <br/>
+In Computer Physics Communications (2020) <br/>
+__Abstract:__ In this study, the open-source Hypersonics Task-based
+Research (HTR) solver for hypersonic aerothermodynamics is
+described. The physical formulation of the code includes
+thermochemical effects induced by high temperatures (vibrational
+excitation and chemical dissociation). The HTR solver uses high-order
+TENO-based spatial discretization on structured grids and efficient
+time integrators for stiff systems, is highly scalable in GPU-based
+supercomputers as a result of its implementation in the Regent/Legion
+stack, and is designed for direct numerical simulations of canonical
+hypersonic flows at high Reynolds numbers. The performance of the HTR
+solver is tested with benchmark cases including inviscid vortex
+advection, low- and high-speed laminar boundary layers, inviscid
+one-dimensional compressible flows in shock tubes, supersonic
+turbulent channel flows, and hypersonic transitional boundary layers
+of both calorically perfect gases and dissociating air.
 
 
 ## Theses
