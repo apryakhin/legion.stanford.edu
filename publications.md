@@ -10,7 +10,7 @@ title: Publications
       * [Overview (SC 2012)](#sc2012) \[[PDF](/pdfs/sc2012.pdf)]
       * [Structure Slicing (SC 2014)](#sc2014) \[[PDF](/pdfs/legion-fields.pdf)]
       * [Tracing (SC 2018)](#trace2018) \[[PDF](/pdfs/trace2018.pdf)]
-      * [Correctness of Dependence Analysis (SC 2018)](#dep2018) \[[PDF](/pdfs/dep2018.pdf)]
+      * [Correctness of Dependence Analysis (Correctness 2018)](#dep2018) \[[PDF](/pdfs/dep2018.pdf)]
   * Programming Model:
       * [Partitioning Type System (OOPSLA 2013)](#oopsla2013) \[[PDF](/pdfs/oopsla2013.pdf)]
       * [Dependent Partitioning (OOPSLA 2016)](#dpl2016) \[[PDF](/pdfs/dpl2016.pdf)]
