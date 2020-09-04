@@ -51,5 +51,4 @@ permalink:   /:categories/:title.html
 kramdown:
   auto_ids: true
 
-include: [".htaccess"]
-exclude: [".gitignore", "Doxyfile", "LICENSE.txt", "Makefile", "README.md"]
+exclude: ["Doxyfile", "Gemfile", "Gemfile.lock", "LICENSE.txt", "Makefile", "README.md"]

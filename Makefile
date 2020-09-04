@@ -62,11 +62,13 @@ legion:
 
 .PHONY: build
 build:
-	jekyll build
+	bundle install
+	bundle exec jekyll build
 
 .PHONY: serve
 serve: doxygen messages
-	jekyll serve --watch
+	bundle install
+	bundle exec jekyll serve --watch
 
 .PHONY: spelling
 spelling:
