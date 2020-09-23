@@ -44,7 +44,7 @@ title: Publications
 
 <a name="sc2012"></a>__Legion: Expressing Locality and Independence with Logical Regions__ [PDF](/pdfs/sc2012.pdf) <br/>
 _Michael Bauer, Sean Treichler, Elliott Slaughter, Alex Aiken_ <br/>
-In the International Conference on Supercomputing ([SC 2012](http://sc12.supercomputing.org)) <br/>
+In the International Conference for High Performance Computing, Networking, Storage and Analysis ([SC 2012](http://sc12.supercomputing.org)) <br/>
 __Abstract:__ Modern parallel architectures have both heterogeneous processors and deep, complex 
 memory hierarchies. We present Legion, a programming model and runtime system
 for achieving high performance on these machines. Legion is
@@ -110,7 +110,7 @@ MPI codes.
 
 <a name="sc2014"></a>__Structure Slicing: Extending Logical Regions with Fields__ [PDF](/pdfs/legion-fields.pdf) <br/>
 _Michael Bauer, Sean Treichler, Elliott Slaughter, Alex Aiken_ <br/>
-In the International Conference on Supercomputing ([SC 2014](http://sc14.supercomputing.org/schedule/event_detail?evid=pap522)) <br/>
+In the International Conference for High Performance Computing, Networking, Storage and Analysis ([SC 2014](http://sc14.supercomputing.org/schedule/event_detail?evid=pap522)) <br/>
 __Abstract:__ Applications on modern supercomputers are increasingly limited by the
 cost of data movement, but mainstream programming systems have few abstractions for
 describing the structure of a program's data. Consequently, the burden of managing
@@ -172,7 +172,7 @@ development.
 
 <a name="sc2015"></a>__Regent: A High-Productivity Programming Language for HPC with Logical Regions__ [PDF](/pdfs/regent2015.pdf) <br/>
 _Elliott Slaughter, Wonchan Lee, Sean Treichler, Michael Bauer, and Alex Aiken_ <br/>
-In the International Conference on Supercomputing ([SC 2015](http://sc15.supercomputing.org/schedule/event_detail?evid=pap326)) <br/>
+In the International Conference for High Performance Computing, Networking, Storage and Analysis ([SC 2015](http://sc15.supercomputing.org/schedule/event_detail?evid=pap326)) <br/>
 __Abstract:__ We present Regent, a high-productivity programming language for high
 performance computing with logical regions. Regent users compose
 programs with tasks (functions eligible for parallel execution) and
@@ -230,7 +230,7 @@ that are too large to fit on a single node and yields an additional
 
 <a name="cr2017"></a>__Control Replication: Compiling Implicit Parallelism to Efficient SPMD with Logical Regions__ [PDF](/pdfs/cr2017.pdf) <br/>
 _Elliott Slaughter, Wonchan Lee, Sean Treichler, Wen Zhang, Michael Bauer, Galen Shipman, Patrick McCormick and Alex Aiken_ <br/>
-In the International Conference on Supercomputing ([SC 2017](http://sc17.supercomputing.org/presentation/?id=pap417&sess=sess165)) <br/>
+In the International Conference for High Performance Computing, Networking, Storage and Analysis ([SC 2017](http://sc17.supercomputing.org/presentation/?id=pap417&sess=sess165)) <br/>
 __Abstract:__ We present control replication, a technique for generating
 high-performance and scalable SPMD code from implicitly parallel
 programs. In contrast to traditional parallel programming models that
@@ -315,7 +315,7 @@ and up to two orders of magnitude speedup over distributed systems.
 
 <a name="trace2018"></a>__Dynamic Tracing: Memoization of Task Graphs for Dynamic Task-Based Runtimes__ [PDF](/pdfs/trace2018.pdf) <br/>
 _Wonchan Lee, Elliott Slaughter, Michael Bauer, Sean Treichler, Todd Warszawski, Michael Garland and Alex Aiken_ <br/>
-In the International Conference on Supercomputing ([SC 2018](https://sc18.supercomputing.org/presentation/?id=pap490&sess=sess183)) <br/>
+In the International Conference for High Performance Computing, Networking, Storage and Analysis ([SC 2018](https://sc18.supercomputing.org/presentation/?id=pap490&sess=sess183)) <br/>
 __Abstract:__ Many recent programming systems for both supercomputing
 and data center workloads generate task graphs to express computations
 that run on parallel and distributed machines. Due to the overhead
@@ -388,7 +388,7 @@ results.
 
 <a name="legate2019"></a>__Legate NumPy: Accelerated and Distributed Array Computing__ [PDF](/pdfs/legate-preprint.pdf) <br/>
 _Michael Bauer and Michael Garland_ <br/>
-In the International Conference on Supercomputing ([SC 2019](http://sc19.supercomputing.org)) <br/>
+In the International Conference for High Performance Computing, Networking, Storage and Analysis ([SC 2019](http://sc19.supercomputing.org)) <br/>
 __Abstract:__ NumPy is a popular Python library used for performing
 array-based numerical computations. The canonical implementation of
 NumPy used by most programmers runs on a single CPU core and only a
@@ -412,7 +412,7 @@ at scale.
 
 <a name="parallel2019"></a>__A Constraint-Based Approach to Automatic Data Partitioning for Distributed Memory Execution__ [PDF](/pdfs/parallelizer2019.pdf) <br/>
 _Wonchan Lee, Manolis Papadakis, Elliott Slaughter and Alex Aiken_ <br/>
-In the International Conference on Supercomputing ([SC 2019](http://sc19.supercomputing.org)) <br/>
+In the International Conference for High Performance Computing, Networking, Storage and Analysis ([SC 2019](http://sc19.supercomputing.org)) <br/>
 __Abstract:__ Although data partitioning is required to enable
 parallelism on distributed memory systems, data partitions are not
 first class objects in most distributed programming models. As a
