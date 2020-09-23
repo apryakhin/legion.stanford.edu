@@ -34,6 +34,7 @@ title: Publications
       * [S3D-Legion (2017)](#s3d2017) \[[PDF](https://www.taylorfrancis.com/books/e/9781315277400/chapters/10.1201/b21930-12)]
       * [Soleil-X (2018)](#soleilx2018) \[[PDF](/pdfs/soleilx2018.pdf)]
       * [HTR Solver (2020)](#htr2020) \[[PDF](https://doi.org/10.1016/j.cpc.2020.107262)]
+      * [Task Bench (2020)](#taskbench2020) \[[PDF](/pdfs/taskbench2020.pdf)]
   * Theses:
       * [Michael Bauer's Thesis (2014)](#bauer_thesis) \[[PDF](/pdfs/bauer_thesis.pdf)]
       * [Sean Treichler's Thesis (2016)](#treichler_thesis) \[[PDF](/pdfs/treichler_thesis.pdf)]
@@ -473,6 +474,29 @@ advection, low- and high-speed laminar boundary layers, inviscid
 one-dimensional compressible flows in shock tubes, supersonic
 turbulent channel flows, and hypersonic transitional boundary layers
 of both calorically perfect gases and dissociating air.
+
+
+<a name="taskbench2020"></a>__Task Bench: A Parameterized Benchmark for Evaluating Parallel Runtime Performance__ [PDF](/pdfs/taskbench2020.pdf) <br/>
+_Elliott Slaughter, Wei Wu, Yuankun Fu, Legend Brandenburg, Nicolai Garcia, Wilhem Kautz, Emily Marx, Kaleb S. Morris, Qinglei Cao, George Bosilca, Seema Mirchandaney, Wonchan Lee, Sean Treichler, Patrick McCormick, and Alex Aiken_ <br/>
+In the International Conference for High Performance Computing, Networking, Storage and Analysis ([SC 2020](https://sc20.supercomputing.org/presentation/?id=pap215&sess=sess162)) <br/>
+__Abstract:__ We present Task Bench, a *parameterized* benchmark designed to
+explore the performance of distributed programming systems under a
+variety of application scenarios. Task Bench dramatically lowers the
+barrier to benchmarking and comparing multiple programming systems by
+making the implementation for a given system orthogonal to the
+benchmarks themselves: every benchmark constructed with Task Bench
+runs on every Task Bench implementation. Furthermore, Task Bench's
+parameterization enables a wide variety of benchmark scenarios that
+distill the key characteristics of larger applications.
+
+To assess the effectiveness and overheads of the tested systems, we
+introduce a novel metric, *minimum effective task granularity*
+(METG). We conduct a comprehensive study with 15 programming systems
+on up to 256 Haswell nodes of the Cori supercomputer. Running at
+scale, 100&mu;s-long tasks are the finest granularity that any
+system runs efficiently with current technologies. We also study each
+system's scalability, ability to hide communication and mitigate load
+imbalance.
 
 
 ## Theses
