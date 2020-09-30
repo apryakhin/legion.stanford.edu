@@ -5,7 +5,6 @@ description:      Home page for the Legion parallel programming system
 # Owner/author information
 owner:
   name:           Legion
-  avatar:         legion_logo.jpg
   bio:            A Data-Centric Parallel Programming System
   email:          #legiondiscuss@googlegroups.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
