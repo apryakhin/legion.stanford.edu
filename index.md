@@ -90,7 +90,7 @@ OLCF, NERSC, and the Swiss National Supercomputing Centre (CSCS).
 
 <tr>
 <td></td>
-<td>  </td>
+<td>Xi Luo</td>
 <td>Irina Demeshko</td>
 <td><a href="http://manopapad.com/">Manolis Papadakis</a></td>
 </tr>
