@@ -11,6 +11,7 @@ title: Publications
       * [Structure Slicing (SC 2014)](#sc2014) \[[PDF](/pdfs/legion-fields.pdf)]
       * [Tracing (SC 2018)](#trace2018) \[[PDF](/pdfs/trace2018.pdf)]
       * [Correctness of Dependence Analysis (Correctness 2018)](#dep2018) \[[PDF](/pdfs/dep2018.pdf)]
+      * [Dynamic Control Replication (PPoPP 2021)](#dcr2021) \[[PDF](/pdfs/dcr2021.pdf)]
   * Programming Model:
       * [Partitioning Type System (OOPSLA 2013)](#oopsla2013) \[[PDF](/pdfs/oopsla2013.pdf)]
       * [Dependent Partitioning (OOPSLA 2016)](#dpl2016) \[[PDF](/pdfs/dpl2016.pdf)]
@@ -498,6 +499,31 @@ system runs efficiently with current technologies. We also study each
 system's scalability, ability to hide communication and mitigate load
 imbalance.
 
+
+<a name="dcr2021"></a>__Scaling Implicit Parallelism via Dynamic Control Replication__ [PDF](/pdfs/dcr2021.pdf) <br/>
+_Michael Bauer, Wonchan Lee, Elliott Slaughter, Zhihao Jia, Mario Di Renzo, Manolis Papadakis, Galen Shipman, Patrick McCormick, Michael Garland, and Alex Aiken_ <br/>
+In Principles and Practices of Parallel Programming ([PPoPP 2021](https://ppopp21.sigplan.org/details/PPoPP-2021-main-conference/10/Scaling-Implicit-Parallelism-via-Dynamic-Control-Replication)) <br/>
+__Abstract:__ We present dynamic control replication, a run-time
+program analysis that enables scalable execution of implicitly
+parallel programs on large machines through a distributed and
+efficient dynamic dependence analysis. Dynamic control replication
+distributes dependence analysis by executing multiple copies of an
+implicitly parallel program while ensuring that they still
+collectively behave as a single execution.  By distributing and
+parallelizing the dependence analysis, dynamic control replication
+supports efficient, on-the-fly computation of dependences for programs
+with arbitrary control flow at scale. We describe an asymptotically
+scalable algorithm for implementing dynamic control replication that
+maintains the sequential semantics of implicitly parallel programs.
+
+An implementation of dynamic control replication in the Legion runtime
+delivers the same programmer productivity as writing in other
+implicitly parallel programming models, such as Dask or TensorFlow,
+while providing better performance (11.4X and 14.9X respectively in
+our experiments), and scalability to hundreds of nodes.  We also show
+that dynamic control replication provides good absolute performance
+and scaling for HPC applications, competitive in many cases with
+explicitly parallel programming systems.
 
 ## Theses
 
