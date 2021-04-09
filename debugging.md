@@ -29,7 +29,7 @@ tools have been exhausted or in special circumstances:
  * [Full-Size Instances](#full-size-instances)
  * [Separate Runtime Instances](#separate-runtime-instances) (`./app -lg:separate -ll:util 0`)
  * [Dump Backtraces](#dump-backtraces) (`./app -ll:force_kthreads`)
- * [Dump Events](#dump-events)
+ * [Dump Events](#dump-events) (`REALM_SHOW_EVENT_WAITERS=60+5`)
  * [Trace Memory Allocations](#trace-memory-allocations) (`CC_FLAGS=-DTRACE_ALLOCATION make; ./app -level allocation=2`)
  * [Legion GC](#legion-gc) (`CC_FLAGS=-DLEGION_GC make; ./app -level legion_gc=2 -logfile gc_%.log; tools/legion_gc.py -l gc_*.log`)
 
@@ -474,7 +474,31 @@ that debug symbols are available.
 
 When debugging a freeze, if dumping backtraces fails to provide
 insight, then it can be helpful to dump the Realm event graph to
-determine if a cycle has formed. Note in order for this to work,
+determine if a cycle has formed.
+
+Realm can be configured to do this after a fixed delay. For example,
+if you observe that the application is reliably frozen after 60
+seconds, then you can do:
+
+{% highlight bash %}
+REALM_SHOW_EVENT_WAITERS=60+5
+./app
+{% endhighlight %}
+
+In a multi-node job, rank `i` will print its events at time
+`60+5i`. This allows the printing to be staggered so that the results
+do not get corrupted. Alternatively, one can use the job scheduler to
+send `stdout` to a different file for each rank (e.g.,
+`--output events_%t.log` in SLURM).
+
+#### Dumping Events with a Debugger
+
+There is an older method of dumping events which is no longer
+recommended in general, but has the advantage that it can be triggered
+interactively (so you can wait until the job actually freezes). This
+method is described below.
+
+Note in order for this to work,
 Legion *must* be compiled with debug symbols (`-Og -ggdb` or
 similar). [Debug mode](#debug-mode) is not required.
 
