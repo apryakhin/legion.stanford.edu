@@ -103,7 +103,7 @@ cargo install --path legion/tools/legion_prof_rs
 legion_prof prof_*.gz
 {% endhighlight %}
 
-The first line installs Rust. The second install a `legion_prof`
+The first line installs Rust. The second installs a `legion_prof`
 binary into `~/.cargo/bin`. The third runs the profiler. The supported
 flags are substantially similar to the Python implementation and can
 be queried with `--help`.
