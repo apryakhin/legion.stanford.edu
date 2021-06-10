@@ -11,6 +11,7 @@ techniques to achieving high performance in Legion applications.
   * [Preliminary Steps](#preliminary-steps)
   * [Legion Prof](#legion-prof)
       * [Generating a Profile](#generating-a-profile)
+      * [Rust Legion Prof](#rust-legion-prof)
       * [Interacting with a Profile](#interacting-with-a-profile)
       * [Advanced Features](#advanced-features)
       * [Using Legion Prof Locally](#using-legion-prof-locally)
