@@ -69,6 +69,10 @@ DEBUG=0 make
 $LG_RT_DIR/../tools/legion_prof.py prof_*.gz
 {% endhighlight %}
 
+(Note: there is now a Rust implementation of Legion Prof, which
+supports a subset of the features, but is 5-15x faster than the Python
+implementation above. See [below](#rust-legion-prof) for details.)
+
 This will generate a subdirectory called `legion_prof` under the
 current directory, including a file named `index.html`. Open this file
 in a browser. Note that, if you are attempting to view this file on
@@ -84,6 +88,38 @@ This profile shows the utilization graph of the memories and processors
 during the run. Legion Prof also can also display  more detailed
 information as described in
 [Interacting with a Profile](#interacting-with-a-profile).
+
+### Rust Legion Prof
+
+There is now a Rust implementation of Legion Prof, in addition to
+Python. It supports a subset of the features of Python, but for the
+features that are supported, the outputs are bitwise identical. See
+below for usage instructions for the Rust profilers.
+
+{% highlight bash %}
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cargo install --path legion/tools/legion_prof_rs
+legion_prof prof_*.gz
+{% endhighlight %}
+
+The first line installs Rust. The second install a `legion_prof`
+binary into `~/.cargo/bin`. The third runs the profiler. The supported
+flags are substantially similar to the Python implementation and can
+be queried with `--help`.
+
+The following features are supported:
+
+  * All utilization views (processors, channels, memories)
+  * Detailed views for:
+      * Processors
+      * Channels
+
+The following features are NOT currently supported:
+
+  * Detailed views for:
+      * Memories (i.e., instances)
+      * Critical path
+      * Task dependencies
 
 ### Interacting with a Profile
 
