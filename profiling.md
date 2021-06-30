@@ -114,13 +114,12 @@ The following features are supported:
   * Detailed views for:
       * Processors
       * Channels
+      * Memories
 
 The following features are NOT currently supported:
 
-  * Detailed views for:
-      * Memories (i.e., instances)
-      * Critical path
-      * Task dependencies
+  * Critical path analysis
+  * Task dependencies
 
 ### Interacting with a Profile
 
