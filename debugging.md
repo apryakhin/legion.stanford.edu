@@ -18,7 +18,7 @@ Generally speaking, users should start by trying these tools
  * [Bounds Checks](#bounds-checks) (`CC_FLAGS=-DBOUNDS_CHECKS make; ./app`)
  * [Partition Checks](#partition-checks) (`./app -lg:partcheck`)
  * [Legion Spy](#legion-spy) (`./app -lg:spy -logfile spy_%.log; tools/legion_spy.py -dez spy_*.log`)
- * [Mapper Logging Wrapper](#mapper-logging-wrapper)
+ * [Mapper Logging Wrapper](#mapper-logging-wrapper) (`new LoggingWrapper(...)` and `-level mapper=2`)
 
 The following tools are typically used after the initial debugging
 tools have been exhausted or in special circumstances:
