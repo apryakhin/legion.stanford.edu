@@ -36,6 +36,7 @@ title: Publications
       * [Soleil-X (2018)](#soleilx2018) \[[PDF](/pdfs/soleilx2018.pdf)]
       * [HTR Solver (2020)](#htr2020) \[[PDF](https://doi.org/10.1016/j.cpc.2020.107262)]
       * [Task Bench (SC 2020)](#taskbench2020) \[[PDF](/pdfs/taskbench2020.pdf)]
+      * [Meshfree Solver (PAW-ATM 2020)](#meshfree2020) \[[PDF](/pdfs/pawatm2020.pdf)]
   * Theses:
       * [Michael Bauer's Thesis (2014)](#bauer_thesis) \[[PDF](/pdfs/bauer_thesis.pdf)]
       * [Sean Treichler's Thesis (2016)](#treichler_thesis) \[[PDF](/pdfs/treichler_thesis.pdf)]
@@ -498,6 +499,21 @@ scale, 100&mu;s-long tasks are the finest granularity that any
 system runs efficiently with current technologies. We also study each
 system's scalability, ability to hide communication and mitigate load
 imbalance.
+
+
+<a name="meshfree2020"></a>__An Implicitly Parallel Meshfree Solver in Regent__ [PDF](/pdfs/pawatm2020.pdf) <br/>
+_Rupanshu Soi, Nischay Ram Mamidi, Elliott Slaughter, Kumar Prasun, Anil Nemili, and S.M. Deshpande_ <br/>
+In the Parallel Applications Workshop, Alternatives to MPI+X ([PAW-ATM 2020](https://sourceryinstitute.github.io/PAW/PAW-ATM20/indexPAW-ATM20.html)) <br/>
+__Abstract:__ This paper presents the development of a Regent
+based implicitly parallel meshfree solver for inviscid compressible
+fluid flows. The meshfree solver is based on the Least Squares
+Kinetic Upwind Method (LSKUM). The performance of the
+Regent parallel solver is assessed by comparing with the explicitly
+parallel versions of the same solver written in Fortran 90 and
+Julia. The Fortran code uses MPI with PETSc libraries, while the
+Julia code uses an MPI + X alternative parallel library. Numerical
+results are shown to assess the performance of these solvers on
+single and multiple CPU nodes.
 
 
 <a name="dcr2021"></a>__Scaling Implicit Parallelism via Dynamic Control Replication__ [PDF](/pdfs/dcr2021.pdf) <br/>
