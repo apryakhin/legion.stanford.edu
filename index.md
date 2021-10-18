@@ -91,15 +91,15 @@ OLCF, NERSC, and the Swiss National Supercomputing Centre (CSCS).
 <tr>
 <td></td>
 <td></td>
-<td>Irina Demeshko</td>
+<td>Nirmal Prajapati</td>
 <td><a href="http://manopapad.com/">Manolis Papadakis</a></td>
 </tr>
 
 <tr>
 <td></td>
 <td>  </td>
-<td>Nirmal Prajapati</td>
 <td></td>
+<td>Irina Demeshko</td>
 </tr>
 
 </table>
