@@ -56,7 +56,7 @@ of the features they encompass.
     deferred execution environment.  We also show how to employ
     acquire and release operations in conjunction with simultaneous
     coherence to safely manage explicit ghost regions.
-  * [Conjugate Gradient](https://github.com/losalamos/CODY/tree/master/legion/lgncg) -
+  * [Conjugate Gradient](https://github.com/lanl/CODY/tree/master/legion/legion-hpcg) -
     An external project being developed by Los Alamos National Lab
     that illustrates how higher-level abstractions should be
     constructed on top of logical regions and the Legion programming
