@@ -9,9 +9,29 @@ network architectures. Compiling GASNet is non-trivial, so new users
 are advised to leave it disabled until their application is fully
 ported and optimized on a single node.
 
+ * [Established GASNet Configurations](#established-gasnet-configurations)
  * [Building GASNet](#building-gasnet)
  * [Configuring GASNet for Performance](#configuring-gasnet-for-performance)
  * [GASNet Performance Environment Variables](#gasnet-performance-environment-variables)
+
+## Established GASNet Configurations
+
+Most users, on most machines, do not need to follow our full
+instructions below. Instead, for machines and networks we've used in
+the past, we maintain a set of [tuned and tested GASNet
+configurations](https://github.com/StanfordLegion/gasnet) that are
+known to work well with Legion. We recommend trying these first to see
+if they will meet your needs prior to attempting to build GASNet on
+your own.
+
+For example, on an InfiniBand machine, the workflow might look like:
+
+{% highlight bash linenos %}
+git clone https://github.com/StanfordLegion/gasnet.git
+export CONDUIT=ibv
+export GASNET=$PWD/gasnet/release
+make -C gasnet
+{% endhighlight %}
 
 ## Building GASNet
 
