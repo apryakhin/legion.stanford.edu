@@ -79,7 +79,7 @@ In this case, the variant is constrained to run on a CPU
 processor (LOC, or *latency optimized core*).
 
 There are additional parameters that can be passed to `preregister_task_variant`
-call as can be seen in the [documentation](/doxygen/class_legion_runtime_1_1_high_level_1_1_high_level_runtime.html#ab1637aefa97d58e7f066ef43dd56b5a2).
+call as can be seen in the [documentation](/doxygen/class_legion_1_1_runtime.html#a5e85dd4405daabc5eb4ebf3621763eb7).
 We'll examine some of these additional parameters in later examples.
 
 All Legion programs begin with a _top-level_ task which starts off
