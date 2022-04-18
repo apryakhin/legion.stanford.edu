@@ -310,7 +310,7 @@ that phase barriers are in no way related to traditional
 barriers in SPMD programming models such as MPI.
 Instead, phase barriers are a very light-weight
 producer-consumer synchronization mechanism. In
-some ways they are similar to [phasers](https://upc-bugs.lbl.gov/~phargrov/sc12/PGAS-SC12/content/habanero/habanero/CS_RIC/_VS3/PDF/SPSS08_P.PDF) in
+some ways they are similar to [phasers](https://www.cs.rice.edu/~vs3/PDF/SPSS08-phasers.pdf) <!-- https://doi.org/10.1145/1375527.1375568 --> in
 X10 and [named barriers](http://docs.nvidia.com/cuda/parallel-thread-execution/index.html#parallel-synchronization-and-communication-instructions-bar) 
 in GPU computing. Phase barriers allow a dynamic
 number of consumers (possibly from different tasks)
