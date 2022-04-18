@@ -347,7 +347,7 @@ either empty tasks or tasks which do not impact
 correctness and simply check for certain conditions
 regarding the data in logical regions. One example of
 a kind of debugging task can be seen in our
-[full circuit simulation](tutorial/circuit.html)
+[full circuit simulation](/tutorial/circuit.html)
 example which has optional checking tasks for
 verifying that there are no `NaN` or `Inf` values
 in our simulation.
@@ -447,7 +447,7 @@ runtime errors. If an application runs correctly
 with `-DFULL_SIZE_INSTANCES` and passes all bounds
 checks then it is likely a runtime bug and should
 be reported on the
-[bug tracker](/discussion/).
+[bug tracker](https://github.com/StanfordLegion/legion/issues).
 
 ### Separate Runtime Instances
 

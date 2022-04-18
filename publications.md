@@ -69,7 +69,7 @@ equation, and a circuit simulation.
 <a name="oopsla2013"></a>__Language Support for Dynamic, Hierarchical Data Partitioning__ [PDF](/pdfs/oopsla2013.pdf) <br/>
 _Sean Treichler, Michael Bauer, Alex Aiken_ <br/>
 In Object Oriented Programming, Systems, Languages, 
-and Applications ([OOPSLA 2013](http://splashcon.org/2013/program/oopsla-research-papers)) <br/>
+and Applications ([OOPSLA 2013](https://web.archive.org/web/20160806105926/http://splashcon.org/2013/program/oopsla-research-papers)) <br/>
 __Abstract:__ Applications written for distributed-memory parallel architectures must 
 partition their data to enable parallel execution. As memory hierarchies become deeper, 
 it is increasingly necessary that the data partitioning also be hierarchical to match. 
@@ -97,7 +97,7 @@ speedup on 96 GPUs on the Keeneland supercomputer.
 
 <a name="pact2014"></a>__Realm: An Event-Based Low-Level Runtime for Distributed Memory Architectures__ [PDF](/pdfs/realm2014.pdf) <br/>
 _Sean Treichler, Michael Bauer, Alex Aiken_ <br/>
-In Parallel Architectures and Compilation Techniques ([PACT 2014](http://www.pactconf.org/program.php)) <br/>
+In Parallel Architectures and Compilation Techniques ([PACT 2014](https://web.archive.org/web/20141217010120/http://www.pactconf.org/program.php)) <br/>
 __Abstract:__ We present Realm, an event-based runtime system for heterogeneous,
 distributed memory machines. Realm is fully asynchronous: all runtime actions
 are non-blocking. Realm supports spawning computations, moving data, and 
@@ -115,7 +115,7 @@ MPI codes.
 
 <a name="sc2014"></a>__Structure Slicing: Extending Logical Regions with Fields__ [PDF](/pdfs/legion-fields.pdf) <br/>
 _Michael Bauer, Sean Treichler, Elliott Slaughter, Alex Aiken_ <br/>
-In the International Conference for High Performance Computing, Networking, Storage and Analysis ([SC 2014](http://sc14.supercomputing.org/schedule/event_detail?evid=pap522)) <br/>
+In the International Conference for High Performance Computing, Networking, Storage and Analysis ([SC 2014](https://web.archive.org/web/20151012063525/http://sc14.supercomputing.org/schedule/event_detail?evid=pap522)) <br/>
 __Abstract:__ Applications on modern supercomputers are increasingly limited by the
 cost of data movement, but mainstream programming systems have few abstractions for
 describing the structure of a program's data. Consequently, the burden of managing
@@ -158,7 +158,7 @@ compiler toolchain that targets Legion as a backend._<br/>
 __Exploring the Construction of a Domain-Aware Toolchain for High-Performance Computing__ [PDF](/pdfs/scout2014.pdf) <br/>
 _Patrick McCormick, Christine Sweeney, Nick Moss, Dean Prichard,
 Samuel K. Gutierrez, Kei Davis, Jamaludin Mohd-Yusof_<br/>
-In the International Workshop on Domain-Specific Languages and High-Level Frameworks for High Performance Computing ([WOLFHPC 2014](http://conferences.computer.org/wolfhpc/2014/)) <br/>
+In the International Workshop on Domain-Specific Languages and High-Level Frameworks for High Performance Computing ([WOLFHPC 2014](https://web.archive.org/web/20150717055110/https://conferences.computer.org/wolfhpc/2014/)) <br/>
 __Abstract:__ The push towards exascale computing has sparked
 a new set of explorations for providing new productive programming
 environments. While many efforts are focusing on
@@ -177,7 +177,7 @@ development.
 
 <a name="sc2015"></a>__Regent: A High-Productivity Programming Language for HPC with Logical Regions__ [PDF](/pdfs/regent2015.pdf) <br/>
 _Elliott Slaughter, Wonchan Lee, Sean Treichler, Michael Bauer, and Alex Aiken_ <br/>
-In the International Conference for High Performance Computing, Networking, Storage and Analysis ([SC 2015](http://sc15.supercomputing.org/schedule/event_detail?evid=pap326)) <br/>
+In the International Conference for High Performance Computing, Networking, Storage and Analysis ([SC 2015](https://web.archive.org/web/20151011093701/http://sc15.supercomputing.org/schedule/event_detail?evid=pap326)) <br/>
 __Abstract:__ We present Regent, a high-productivity programming language for high
 performance computing with logical regions. Regent users compose
 programs with tasks (functions eligible for parallel execution) and

@@ -314,7 +314,7 @@ of all possible variants of tasks at compile-time. This
 is clearly not ideal.
 
 A solution to this problem is in progress. We are currently
-in the process of incorporating the [Terra](terralang.org)
+in the process of incorporating the [Terra](https://terralang.org)
 programming system into Legion. Terra is a companion to Lua
 that enables Lua to be used as a meta-programming language
 for generating Terra code which can be JIT-compiled to

@@ -118,7 +118,7 @@ bits being returned. This is a blocking call which will cause
 the task in which it is executed to pause until the sub-task 
 which is completing the future returns. We discourage users
 from using futures in this way for reasons described in the
-section on [performance considerations](tutorial01.md#performance-considerations).
+section on [performance considerations](#performance-considerations).
 
 There is a second way of using futures which does not require
 blocking to wait for future values. In our Fibonacci task,

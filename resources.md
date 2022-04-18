@@ -11,7 +11,7 @@ C++:
   * [S3D](https://www.osti.gov/biblio/1410202-s3d-legion-exascale-software-direct-numerical-simulation-turbulent-combustion-complex-multicomponent-chemistry)
   * [SNAP: discrete ordinates mini-app](https://github.com/StanfordLegion/Legion-SNAP)
   * [Fast linear solver based on HODLR structure](https://github.com/Charles-Chao-Chen/fastSolver2)
-  * [MiniAero: RK4 unstructured FV, compressible Navier-Stokes](wonchan@cs.stanford.edu)
+  * [MiniAero: RK4 unstructured FV, compressible Navier-Stokes](mailto:wonchan@cs.stanford.edu)
   * [PRK Stencil](https://github.com/magnatelee/PRK/tree/master/LEGION/Stencil)
 
 Regent:
@@ -19,7 +19,7 @@ Regent:
   * [Soleil-X: multi-physics solver (explicit compressible flow, point particles, DOM radiation)](https://github.com/stanfordhpccenter/soleil-x)
   * [Circuit simulation](https://github.com/StanfordLegion/legion/blob/master/language/examples/circuit_sparse.rg)
   * [PENNANT: unstructured mesh, Lagrangian staggered-grid hydrodynamics](https://github.com/StanfordLegion/legion/blob/master/language/examples/pennant_fast.rg)
-  * [MiniAero: RK4 unstructured FV, compressible Navier-Stokes](wonchan@cs.stanford.edu)
+  * [MiniAero: RK4 unstructured FV, compressible Navier-Stokes](mailto:wonchan@cs.stanford.edu)
   * [PageRank](https://github.com/StanfordLegion/legion/blob/master/language/examples/pagerank/pagerank_optimized.rg)
   * [PRK Stencil](https://github.com/StanfordLegion/legion/blob/master/language/examples/stencil_fast.rg)
   * [Barnes-Hut](https://github.com/StanfordLegion/barnes-hut)

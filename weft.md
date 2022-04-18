@@ -220,7 +220,7 @@ WEFT INSTRUMENTATION
 ### Authors
 
  * [Rahul Sharma](http://stanford.edu/~sharmar)
- * [Mike Bauer](https://research.nvidia.com/users/mike-bauer)
+ * [Mike Bauer](https://lightsighter.org/)
  * [Alex Aiken](http://theory.stanford.edu/~aiken/)
 
 ### License

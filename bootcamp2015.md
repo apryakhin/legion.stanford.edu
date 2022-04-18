@@ -30,7 +30,7 @@ The exercises from the bootcamp are available in a [Github repository](https://g
       * Part 2: [Instructions](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session2/part2/instructions.md), [Starter Code](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session2/part2/circuit.rg), [Solution Code](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session2/part2/circuit_sol.rg)
   * **Session 3: Mapping and Optimization**
       * Part 1: [Instructions](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session3/part1/instructions.md), [Starter Code](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session3/part1/circuit.rg), [Solution Code](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session3/part1/circuit_sol.rg)
-      * Part 2: [Instructions](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session3/part2/instructions.md), [Starter Code](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session3/part2/circuit.rg), [Solution Code](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session3/part2/circuit_sol.rg)
+      * Part 2: [Instructions](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session3/part2/instructions.md), [Starter Code](https://github.com/StanfordLegion/bootcamp-2015/blob/master/regent/exercises/session3/part2/circuit.rg)
 
 ## Previous Bootcamps
 

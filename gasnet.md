@@ -110,7 +110,7 @@ Keeneland). We then specify the target conduits to build with the
 `--enable-ibv` and `--enable-mpi` flags indicating that GASNet should
 build the Infiniband and MPI conduits. The `--disable-portals` and
 `--disable-mxm` tell GASNet to avoid using any available
-[Portals](http://www.cs.sandia.gov/Portals/) or Mellanox APIs when
+[Portals](https://www.sandia.gov/portals/) or Mellanox APIs when
 building our conduits respectively. The `--enable-pthreads` flag
 instructs GASNet that it can use the Posix threads API as part of its
 implementation. We instruct GASNet that it should pin 4 GB of memory
