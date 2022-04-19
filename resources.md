@@ -45,7 +45,6 @@ Regent:
 
 ## Testing
 
-  * [Travis CI](https://travis-ci.org/StanfordLegion/legion/builds)
   * [Gitlab CI](https://gitlab.com/StanfordLegion/legion/pipelines)
   * [Performance](/perf/)
 
