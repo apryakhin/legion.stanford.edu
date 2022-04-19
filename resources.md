@@ -53,10 +53,6 @@ Regent:
 
   * See [internals documentation](/documentation/#internals)
 
-## S3D Traces
-
-  * [S3D Traces](/traces/) (for use with SSTMacro)
-
 ## Weft
 
   * [Weft](/weft/) (companion artifacts for Weft PLDI 2015 paper)

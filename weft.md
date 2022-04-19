@@ -4,13 +4,22 @@ permalink: /weft/index.html
 title: Verification of Producer-Consumer Synchronization in GPU Programs 
 ---
 
-#### Weft
+### Update
+
+**Important:** as of 2022, some of the links below are dead, and these
+instructions may no longer work. For the most up-to-date instructions,
+please go to the [GitHub
+repo](https://github.com/lightsighter/Weft). **This page is no longer
+being maintained.**
+
+### Weft
+
 
 This webpage describes the artifact for the following PLDI 2015 paper:
 
 [Verification of Producer-Consumer Synchronization in GPU Programs](/pdfs/weft.pdf)
 
-The artifact (a CDE package) can be downloaded [here](http://stanford.edu/~sharmar/cde-weft.tar.gz).
+<p><strike>The artifact (a CDE package) can be downloaded here.</strike> The artifact link is dead, please refer to the GitHub repo above.</p>
 
 ### Improvements
 
@@ -89,8 +98,9 @@ the terminal using the following command:
 {% endhighlight %}
 
 The ugly looking *cde-exec* prefix is important. It ensures 
-that the CDE package performs as expected. For more details, 
-please see the CDE [user manual](http://www.pgbovine.net/cde/manual/).
+that the CDE package performs as expected. <strike>For more details,
+please see the CDE user manual.</strike> The CDE user manual
+link is dead.
 
 This shell file first compiles WEFT. Since the package contains a 
 precompiled binary of WEFT, you should see the following output.
@@ -219,7 +229,7 @@ WEFT INSTRUMENTATION
 
 ### Authors
 
- * [Rahul Sharma](http://stanford.edu/~sharmar)
+ * [Rahul Sharma](https://www.microsoft.com/en-us/research/people/rahsha/)
  * [Mike Bauer](https://lightsighter.org/)
  * [Alex Aiken](http://theory.stanford.edu/~aiken/)
 
