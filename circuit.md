@@ -17,9 +17,9 @@ _private_ or _shared_ between circuit pieces. Further partitions
 then refine the _private_, _shared_, and _ghost_ nodes for
 each circuit piece. The following figure illustrates the
 partitioning scheme for the node logical region tree.
-<br/><br/>
+
 ![](/images/circuit_partition.svg)
-<br/><br/>
+
 An explicit iterative solver is then used to step through 
 time and solve for the updated voltages and currents on 
 each node and wire. The solver consists of three primary stages:
@@ -60,7 +60,7 @@ support a second operation called a _fold_ which must be a pure
 function of the type `T2 -> T2 -> T2` where `T2` is again the
 type of the value being reduced. We describe how fold functions
 are used by the runtime in the next section.
-<br/>
+
 Legion assumes that reduction operations are always _associative_
 and _commutative_ in the mathematical sense. This means that
 regardless of the order in which reductions are issued by tasks
@@ -157,9 +157,9 @@ GPU. After the tasks finish executing, the reduction buffers are
 then applied back to the instance containing all the shared nodes
 residing in GASNet memory. An illustration depicting this scenario
 within the circuit simulation is shown below.
-<br/><br/>
+
 ![](/images/circuit_mapping.svg)
-<br/><br/>
+
 Legion supports the creation of two different kinds of reduction
 instances. First, for basic reduction operations with no `fold`
 function, Legion can create _reduction list_ instances. When
@@ -220,8 +220,8 @@ implementation of the constructors for each of these tasks
 then fill in the `RegionRequirement` vectors for each task
 launch. This explicitly co-locates in the description of the
 logical regions and fields to be used by a task improving
-code readability.<br/>
-<br/>
+code readability.
+
 For the implementation of each task, static member functions
 are given for each kind of variant. For all three primary
 tasks in our circuit example, we support both CPU and GPU

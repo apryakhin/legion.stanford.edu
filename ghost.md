@@ -84,9 +84,10 @@ to note at this point we have not created any
 logical regions yet, but simply described the
 decomposition of the index space of points. The
 following image illustrate the resulting index
-space tree.<br/><br/>
+space tree.
+
 ![](/images/ghost_tree.svg)
-<br/><br/>
+
 After setting up our index space tree, we now
 create the explicit ghost regions from the leaf
 index spaces of the tree. Note that we do 
@@ -428,9 +429,9 @@ explicit ghost region version of the stencil
 computation, the following picture illustrates
 how the stencil computation works between
 a pair of `spmd_task` instances.
-<br/><br/>
+
 ![](/images/phase_barrier.svg)
-<br/><br/>
+
 Each of `spmd_task` instances performs several
 iterations of the stencil computation. Each
 iteration issues a copy to exchange ghost
