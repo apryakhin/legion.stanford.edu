@@ -1,6 +1,6 @@
 # Deploy locally
 .PHONY: local
-local: doxygen messages build
+local: doxygen manual messages build
 	@echo "Result is in _site"
 
 # Deploy to Sapling
@@ -60,13 +60,20 @@ messages: legion
 legion:
 	@if [ -d _legion ]; then git -C _legion pull --ff-only; else git clone -b master https://github.com/StanfordLegion/legion.git _legion; fi
 
+.PHONY: manual
+manual:
+	@if [ -d _manual ]; then git -C _manual pull --ff-only; else git clone -b master https://github.com/StanfordLegion/legion-manual.git _manual; fi
+	make -C _manual clean
+	make -C _manual
+	cp _manual/legion.pdf pdfs/legion-manual.pdf
+
 .PHONY: build
 build:
 	bundle install
 	bundle exec jekyll build
 
 .PHONY: serve
-serve: doxygen messages
+serve: doxygen manual messages
 	bundle install
 	bundle exec jekyll serve --watch
 
