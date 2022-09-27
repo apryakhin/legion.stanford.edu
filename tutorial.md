@@ -64,6 +64,17 @@ of the features they encompass.
     abstractions are built on top of Legion as part of the development
     of a conjugate gradient solver.
 
+## Legion Manual and API Documentation
+
+The Legion manual documents features of the Legion C++ runtime API in
+a systematic way, going beyond what is convered in the tutorials. This
+resource, along with [C++ API documentation](/doxygen/), are
+recommended reading for interested users wanting to dive deeper into
+the Legion programming model.
+
+  * [Manual](/pdfs/legion-manual.pdf)
+  * [C++ API documentation](/doxygen/)
+
 ## Debugging and Profiling
 
 The following pages describe Legion's debugging and profiling
