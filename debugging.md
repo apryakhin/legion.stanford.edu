@@ -492,7 +492,7 @@ to use the flag `-ll:force_kthreads` to disable user-level threads:
 ./app -ll:force_kthreads
 # wait for the application to freeze
 gdb -p 12345
-apply thread all bt # inside gdb, dump backtraces
+thread apply all bt # inside gdb, dump backtraces
 {% endhighlight %}
 
 Note also that it is important to compile with debug symbols or else
