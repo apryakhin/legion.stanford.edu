@@ -10,7 +10,7 @@ This page lists the collected documentation on Legion and Regent.
 
   * [Tutorials](/tutorial/): start here if you are new to Legion
   * [Manual](/pdfs/legion-manual.pdf): documents the features of the Legion C++ runtime API in a systematic way
-  * [debugging](/debugging/): instructions for debugging Legion programs
+  * [Debugging](/debugging/): instructions for debugging Legion programs
   * [Profiling](/profiling/): instructions for profiling and tuning Legion programs
   * [Mapping](/mapper/): instructions for writing a custom Legion mapper
   * [C++ API Documentation](/doxygen/): complete API documentation
