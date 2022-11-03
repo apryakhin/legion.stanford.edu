@@ -586,7 +586,7 @@ outlier) on higher order tensor operations.
 
 <a name="pawatm2022"></a>__Task Fusion in Distributed Runtimes__ [PDF](/pdfs/pawatm2022.pdf) <br/>
 _Shiv Sundram, Wonchan Lee and Alex Aiken_ <br/>
-In the Parallel Applications Workshop, Alternatives to MPI+X ([PAW-ATM 2022](https://sourceryinstitute.github.io/PAW/))
+In the Parallel Applications Workshop, Alternatives to MPI+X ([PAW-ATM 2022](https://sourceryinstitute.github.io/PAW/)) <br/>
 __Abstract:__ We present distributed task fusion, a runtime
 optimization for task-based runtimes operating on parallel and
 heterogeneous systems. Distributed task fusion dynamically performs an
