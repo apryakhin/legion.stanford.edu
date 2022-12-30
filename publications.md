@@ -31,6 +31,7 @@ title: Publications
       * [Legate NumPy (SC 2019)](#legate2019) \[[PDF](/pdfs/legate-preprint.pdf)]
       * [Tensor Algebra (PLDI 2022)](#distal2022) \[[PDF](/pdfs/distal2022.pdf)]
       * [Distributed Task Fusion (PAW-ATM 2022)](#pawatm2022) \[[PDF](/pdfs/pawatm2022.pdf)]
+      * [Sparse Tensor Algebra (SC 2022)](#spdistal2022) \[[PDF](/pdfs/spdistal2022.pdf)]
   * Applications:
       * [S3D-Legion (2017)](#s3d2017) \[[PDF](https://www.taylorfrancis.com/books/e/9781315277400/chapters/10.1201/b21930-12)]
       * [Soleil-X (2018)](#soleilx2018) \[[PDF](/pdfs/soleilx2018.pdf)]
@@ -604,6 +605,25 @@ efficient execution of pipelines involving many successive finegrained
 tasks. Finally, we discuss potential future work, including
 complementary optimizations that could result in additional
 performance improvements.
+
+
+<a name="spdistal2022"></a>__SpDISTAL: Compiling Distributed Sparse Tensor Computations__ [PDF](/pdfs/spdistal2022.pdf) <br/>
+_Rohan Yadav, Alex Aiken and Fredrik Kjolstad_ <br/>
+In the International Conference for High Performance Computing, Networking, Storage and Analysis ([SC 2022](https://sc22.supercomputing.org/presentation/?id=pap204&sess=sess164)) <br/>
+__Abstract:__ We introduce SpDISTAL, a compiler for sparse tensor
+algebra that targets distributed systems. SpDISTAL combines separate
+descriptions of tensor algebra expressions, sparse data structures,
+data distribution, and computation distribution.  Thus, it enables
+distributed execution of sparse tensor algebra expressions with a wide
+variety of sparse data structures and data distributions. SpDISTAL is
+implemented as a C++ library that targets a distributed task-based
+runtime system and can generate code for nodes with both multi-core
+CPUs and multiple GPUs.  SpDISTAL generates distributed code that
+achieves performance competitive with hand-written distributed
+functions for specific sparse tensor algebra expressions and that
+outperforms general interpretation-based systems by one to two orders
+of magnitude.
+
 
 ## Theses
 
