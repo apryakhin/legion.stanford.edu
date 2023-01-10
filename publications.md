@@ -13,6 +13,7 @@ title: Publications
       * [Correctness of Dependence Analysis (Correctness 2018)](#dep2018) \[[PDF](/pdfs/dep2018.pdf)]
       * [Dynamic Control Replication (PPoPP 2021)](#dcr2021) \[[PDF](/pdfs/dcr2021.pdf)]
       * [Index Launches (SC 2021)](#idx2021) \[[PDF](/pdfs/idx2021.pdf)]
+      * [Visibility Algorithms (PPoPP 2023)](#visibility2023) \[[PDF](/pdfs/visibility2023.pdf)]
   * Programming Model:
       * [Partitioning Type System (OOPSLA 2013)](#oopsla2013) \[[PDF](/pdfs/oopsla2013.pdf)]
       * [Dependent Partitioning (OOPSLA 2016)](#dpl2016) \[[PDF](/pdfs/dpl2016.pdf)]
@@ -624,6 +625,18 @@ functions for specific sparse tensor algebra expressions and that
 outperforms general interpretation-based systems by one to two orders
 of magnitude.
 
+<a name="visibility2023"></a>__Visibility Algorithms for Dynamic Dependence Analysis and Distributed Coherence__ [PDF](/pdfs/visibility2023.pdf) <br/>
+_Michael Bauer, Elliott Slaughter, Sean Treichler, Wonchan Lee, Michael Garland and Alex Aiken_ <br/>
+In Principles and Practices of Parallel Programming ([PPoPP 2023](https://ppopp23.sigplan.org/program/program-PPoPP-2023/)) <br/>
+__Abstract:__ Implicitly parallel programming systems must solve 
+the joint problems of dependence analysis and coherence to ensure 
+apparently-sequential semantics for applications run on distributed 
+memory machines. Solving these problems in the presence of data-dependent 
+control flow and arbitrary aliasing is a challenge that most existing systems 
+eschew by compromising the expressivity of their programming models and/or 
+the performance of their implementations. We demonstrate a general class of 
+solutions to these problems via a reduction to the visibility problem from 
+computer graphics.
 
 ## Theses
 
