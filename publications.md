@@ -627,7 +627,7 @@ of magnitude.
 
 <a name="visibility2023"></a>__Visibility Algorithms for Dynamic Dependence Analysis and Distributed Coherence__ [PDF](/pdfs/visibility2023.pdf) <br/>
 _Michael Bauer, Elliott Slaughter, Sean Treichler, Wonchan Lee, Michael Garland and Alex Aiken_ <br/>
-In Principles and Practices of Parallel Programming ([PPoPP 2023](https://ppopp23.sigplan.org/program/program-PPoPP-2023/)) <br/>
+In Principles and Practices of Parallel Programming ([PPoPP 2023](https://ppopp23.sigplan.org/details/PPoPP-2023-papers/17/Visibility-Algorithms-for-Dynamic-Dependence-Analysis-and-Distributed-Coherence)) <br/>
 __Abstract:__ Implicitly parallel programming systems must solve 
 the joint problems of dependence analysis and coherence to ensure 
 apparently-sequential semantics for applications run on distributed 
