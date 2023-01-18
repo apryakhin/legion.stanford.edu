@@ -17,6 +17,7 @@ jobs:
           sudo gem install bundler
       - name: Deploy Website
         run: |
+          eval "$(ssh-agent -s)"
           ./_add_deploy_key.sh
           make github
         env:
