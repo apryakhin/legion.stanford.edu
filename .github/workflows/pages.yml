@@ -13,10 +13,12 @@ jobs:
       - name: Install Dependencies
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y ruby ruby-dev pandoc doxygen git make rsync texlive texlive-fonts-extra
+          sudo apt-get install -y ruby ruby-dev pandoc doxygen git make rsync
           sudo gem install bundler
       - name: Deploy Website
         run: |
+          git config --global user.email "StanfordLegion@users.noreply.github.com"
+          git config --global user.name "StanfordLegion GitHub Actions"
           eval "$(ssh-agent -s)"
           ./_add_deploy_key.sh
           make github
