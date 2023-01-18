@@ -19,3 +19,5 @@ jobs:
         run: |
           ./_add_deploy_key.sh
           make github
+        env:
+          GIT_DEPLOY_KEY: ${{ secrets.GIT_DEPLOY_KEY }}
