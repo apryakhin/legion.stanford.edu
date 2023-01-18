@@ -1,0 +1,21 @@
+name: Github Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ruby ruby-dev pandoc doxygen git make rsync
+          sudo gem install bundler
+      - name: Deploy Website
+        run: |
+          _add_deploy_key.sh
+          make github
