@@ -7,4 +7,4 @@ if [[ -z "$GIT_DEPLOY_KEY" ]]; then
     exit 1
 fi
 
-ssh-add -i <<< "$GIT_DEPLOY_KEY"
+ssh-add - <<< "$GIT_DEPLOY_KEY"
