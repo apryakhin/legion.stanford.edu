@@ -17,5 +17,5 @@ jobs:
           sudo gem install bundler
       - name: Deploy Website
         run: |
-          _add_deploy_key.sh
+          ./_add_deploy_key.sh
           make github
