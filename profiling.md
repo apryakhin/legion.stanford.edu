@@ -99,7 +99,7 @@ below for usage instructions for the Rust profilers.
 
 {% highlight bash %}
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-cargo install --path legion/tools/legion_prof_rs
+cargo install --locked --path legion/tools/legion_prof_rs
 legion_prof prof_*.gz
 {% endhighlight %}
 
