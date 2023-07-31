@@ -38,8 +38,6 @@ If using GASNet, ensure that [GASNet has been properly configured and
 optimized]({{ "/gasnet/" | relative_url }}). GASNet can be important for performance on
 multi-node runs.
 
-## Legion Prof
-
 Before taking steps towards optimizing a program, it is usually
 helpful to profile the application in question. Legion has a
 task-level profiler called Legion Prof which is used for this purpose.
@@ -53,7 +51,7 @@ Legion Prof outputs its logs in a compressed binary format using `ZLIB`.
 If you don't have `ZLIB` on your system, you can set `USE_ZLIB=0` in
 your Makefile.
 
-### Generating a Profile
+## Generating Log Files
 
 To profile an application, run with `-lg:prof <N>` where `N` is the
 number of nodes to be profiled. (`N` can be less than the total number
@@ -61,54 +59,27 @@ of nodes---this profiles a subset of the nodes.) Use the
 `-lg:prof_logfile <logfile>` flag to save the output from each node to
 a separate file. The argument to the `-lg:prof_logfile` flag follows
 the same format as for `-logfile`, except that a `%` (to be replaced
-by the node number) is mandatory. Finally, pass
-the resulting log files to `legion_prof.py`.
+by the node number) is mandatory. Finally,
+the resulting log files need to be post processed with `legion_prof`.
 
-{% highlight bash %}
-DEBUG=0 make
-./app -lg:prof <N> -lg:prof_logfile prof_%.gz
-$LG_RT_DIR/../tools/legion_prof.py prof_*.gz
-{% endhighlight %}
+## Legion Prof
 
-(Note: there is now a Rust implementation of Legion Prof, which
-supports a subset of the features, but is 5-15x faster than the Python
-implementation above. See [below](#rust-legion-prof) for details.)
-
-This will generate a subdirectory called `legion_prof` under the
-current directory, including a file named `index.html`. Open this file
-in a browser. Note that, if you are attempting to view this file on
-your local computer, modern browser security settings prevent Legion
-Prof from working properly. Please see the instructions for [Using
-Legion Prof Locally](#using-legion-prof-locally).
-
-A sample of Legion Prof's output is shown below.
-
-![]({{ "/images/profiling/collapsed_profile.png" | relative_url }})
-
-This profile shows the utilization graph of the memories and processors
-during the run. Legion Prof also can also display  more detailed
-information as described in
-[Interacting with a Profile](#interacting-with-a-profile).
-
-### Rust Legion Prof
-
-There is now a Rust implementation of Legion Prof, in addition to
-Python. It supports a subset of the features of Python, but for the
-features that are supported, the outputs are bitwise identical. See
-below for usage instructions for the Rust profilers.
+Before post processing the log files output from running your
+application with `-lg:prof` the post processer must be installed by
+running the following:
 
 {% highlight bash %}
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-cargo install --locked --path legion/tools/legion_prof_rs
-legion_prof prof_*.gz
+cargo install --locked --features=viewer --features=server --features=archiver --features=client --path legion/tools/legion_prof_rs
 {% endhighlight %}
 
 The first line installs Rust. The second installs a `legion_prof`
-binary into `~/.cargo/bin`. The third runs the profiler. The supported
-flags are substantially similar to the Python implementation and can
-be queried with `--help`.
+binary into `~/.cargo/bin`. The supported flags can be queried with
+`legion_prof --help`.
+The profiler has four different modes it can be installed with which
+support various features.
 
-The following features are supported:
+By default all modes support the following features:
 
   * All utilization views (processors, channels, memories)
   * Detailed views for:
@@ -120,6 +91,88 @@ The following features are NOT currently supported:
 
   * Critical path analysis
   * Task dependencies
+
+### Legacy Profile
+
+{% highlight bash %}
+legion_prof prof_*.gz
+{% endhighlight %}
+
+Running the profiler in this mode produces a directory called
+`legion_prof` in the current directory which contains an HTML file
+that can be viewed in your browser by copying to the directory to a
+web server or using a local web server as shown below:
+
+{% highlight bash %}
+cd legion_prof
+python -m SimpleHTTPServer
+# or
+python3 -m http.server
+{% endhighlight %}
+
+and loading the page on `localhost:8000` from your browser.
+
+Alternatively, if you want to use Chrome on local profiles, launch Chrome with
+`chrome --allow-file-access-from-files` from the terminal. Note that you will
+need to completely close Chrome before doing this.
+
+A sample of Legion Prof's output is shown below.
+
+![]({{ "/images/profiling/collapsed_profile.png" | relative_url }})
+
+### Local Viewer
+
+{% highlight bash %}
+legion_prof --view prof_*.gz
+{% endhighlight %}
+
+In this mode log files are parsed locally and a desktop UI is
+launched to view the profile.
+
+![]({{ "/images/profiling/legion_prof_viewer.png" | relative_url }})
+
+### Archive
+
+{% highlight bash %}
+legion_prof --archive prof_*.gz
+{% endhighlight %}
+
+In this mode log files are parsed locally but the profiler generates
+an archive of tiles for sharing. To view the tiles upload them to a
+publicly web server and open the URL:
+`https://leigon.stanford.edu/prof-viewr/?url=https://<URL>` where <URL> is the
+location the archive was uploaded to.
+
+![]({{ "/images/profiling/legion_prof_web_viewer.png" | relative_url }})
+
+### Serve and Attach
+
+{% highlight bash %}
+legion_prof --serve prof_*.gz
+{% endhighlight %}
+
+Using this mode log files can be processed remotely on machine with
+more memory. `legion_prof` will start a web server and allow you to attach
+using a client running on your local machine:
+
+{% highlight bash %}
+legion_prof --attach http://localhost:8080
+{% endhighlight %}
+
+This mode can be used with ssh port forwarding in the following way:
+
+{% highlight bash %}
+ssh -L 7999:localhost:7999 sapling2.stanford.edu
+sapling2:~$ legion_prof --serve --port 7999 prof_*
+{% endhighlight %}
+
+local machine:
+
+{% highlight bash %}
+legion_prof --attach http://localhost:7999
+{% endhighlight %}
+
+![]({{ "/images/profiling/legion_prof_viewer_remote.png" | relative_url }})
 
 ### Interacting with a Profile
 
@@ -198,27 +251,6 @@ should be made to improve the performance of the application. To remove the
 critical path line, simply press `a` again.
 
 ![]({{ "/images/profiling/critical_path_profile.gif" | relative_url }})
-
-### Using Legion Prof Locally
-
-If you try to access `index.html` locally (by opening 
-`file:///.../index.html`), you may run into issues and may not be able to view
-the profile output. We recommend accessing your profile
-over a remote web server. Alternately, you can spin up a simple web server
-locally:
-
-{% highlight bash %}
-cd legion_prof
-python -m SimpleHTTPServer
-# or
-python3 -m http.server
-{% endhighlight %}
-
-and load your page on `localhost:8000` from your browser.
-
-Alternatively, if you want to use Chrome on local profiles, launch Chrome with
-`chrome --allow-file-access-from-files` from the terminal. Note that you will
-need to completely close Chrome before doing this.
 
 ## General Optimization Techniques
 
