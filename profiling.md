@@ -9,12 +9,14 @@ necessary to profile and tune for performance. This page covers
 techniques to achieving high performance in Legion applications.
 
   * [Preliminary Steps](#preliminary-steps)
+  * [Generating Legion Prof Logs](#generating-legino-prof-logs)
   * [Legion Prof](#legion-prof)
-      * [Generating a Profile](#generating-a-profile)
-      * [Rust Legion Prof](#rust-legion-prof)
+      * [Local Viewer](#local-viewer)
+      * [Archive](#archive)
+      * [Serve and Attach](#serve-and-attach)
+      * [Legacy Profile Viewer](#legacy-profile-viewer)
       * [Interacting with a Profile](#interacting-with-a-profile)
       * [Advanced Features](#advanced-features)
-      * [Using Legion Prof Locally](#using-legion-prof-locally)
   * [General Optimization Techniques](#general-optimization-techniques)
   * Legion Configuration:
       * [Machine Configuration](#machine-configuration)
@@ -51,7 +53,7 @@ Legion Prof outputs its logs in a compressed binary format using `ZLIB`.
 If you don't have `ZLIB` on your system, you can set `USE_ZLIB=0` in
 your Makefile.
 
-## Generating Log Files
+## Generating Legion Prof Logs
 
 To profile an application, run with `-lg:prof <N>` where `N` is the
 number of nodes to be profiled. (`N` can be less than the total number
@@ -70,7 +72,7 @@ running the following:
 
 {% highlight bash %}
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-cargo install --locked --features=viewer --features=server --features=archiver --features=client --path legion/tools/legion_prof_rs
+cargo install --locked --all-features --path legion/tools/legion_prof_rs
 {% endhighlight %}
 
 The first line installs Rust. The second installs a `legion_prof`
@@ -78,47 +80,6 @@ binary into `~/.cargo/bin`. The supported flags can be queried with
 `legion_prof --help`.
 The profiler has four different modes it can be installed with which
 support various features.
-
-By default all modes support the following features:
-
-  * All utilization views (processors, channels, memories)
-  * Detailed views for:
-      * Processors
-      * Channels
-      * Memories
-
-The following features are NOT currently supported:
-
-  * Critical path analysis
-  * Task dependencies
-
-### Legacy Profile
-
-{% highlight bash %}
-legion_prof prof_*.gz
-{% endhighlight %}
-
-Running the profiler in this mode produces a directory called
-`legion_prof` in the current directory which contains an HTML file
-that can be viewed in your browser by copying to the directory to a
-web server or using a local web server as shown below:
-
-{% highlight bash %}
-cd legion_prof
-python -m SimpleHTTPServer
-# or
-python3 -m http.server
-{% endhighlight %}
-
-and loading the page on `localhost:8000` from your browser.
-
-Alternatively, if you want to use Chrome on local profiles, launch Chrome with
-`chrome --allow-file-access-from-files` from the terminal. Note that you will
-need to completely close Chrome before doing this.
-
-A sample of Legion Prof's output is shown below.
-
-![]({{ "/images/profiling/collapsed_profile.png" | relative_url }})
 
 ### Local Viewer
 
@@ -151,7 +112,7 @@ location the archive was uploaded to.
 legion_prof --serve prof_*.gz
 {% endhighlight %}
 
-Using this mode log files can be processed remotely on machine with
+Using this mode log files can be processed remotely on a machine with
 more memory. `legion_prof` will start a web server and allow you to attach
 using a client running on your local machine:
 
@@ -173,6 +134,34 @@ legion_prof --attach http://localhost:7999
 {% endhighlight %}
 
 ![]({{ "/images/profiling/legion_prof_viewer_remote.png" | relative_url }})
+
+### Legacy Profile Viewer
+
+{% highlight bash %}
+legion_prof prof_*.gz
+{% endhighlight %}
+
+Running the profiler in this mode produces a directory called
+`legion_prof` in the current directory which contains an HTML file
+that can be viewed in your browser by copying to the directory to a
+web server or using a local web server as shown below:
+
+{% highlight bash %}
+cd legion_prof
+python -m SimpleHTTPServer
+# or
+python3 -m http.server
+{% endhighlight %}
+
+and loading the page on `localhost:8000` from your browser.
+
+Alternatively, if you want to use Chrome on local profiles, launch Chrome with
+`chrome --allow-file-access-from-files` from the terminal. Note that you will
+need to completely close Chrome before doing this.
+
+A sample of Legion Prof's output is shown below.
+
+![]({{ "/images/profiling/collapsed_profile.png" | relative_url }})
 
 ### Interacting with a Profile
 
