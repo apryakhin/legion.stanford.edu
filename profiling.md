@@ -9,7 +9,7 @@ necessary to profile and tune for performance. This page covers
 techniques to achieving high performance in Legion applications.
 
   * [Preliminary Steps](#preliminary-steps)
-  * [Generating Legion Prof Logs](#generating-legino-prof-logs)
+  * [Generating Legion Prof Logs](#generating-legion-prof-logs)
   * [Legion Prof](#legion-prof)
       * [Local Viewer](#local-viewer)
       * [Archive](#archive)
