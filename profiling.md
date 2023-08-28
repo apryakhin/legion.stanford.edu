@@ -13,7 +13,7 @@ techniques to achieving high performance in Legion applications.
       * [Generating Legion Prof Logs](#generating-legion-prof-logs)
       * [Installing `legion_prof`](#installing-legion_prof)
       * [Viewing Profiles Locally (View Mode)](#viewing-profiles-locally-view-mode)
-      * [Saving and Sharing Profiles (Archive Mode)](#sharing-profiles-archive-mode)
+      * [Saving and Sharing Profiles (Archive Mode)](#saving-and-sharing-profiles-archive-mode)
       * [Remotely Viewing Profiles (Serve and Attach Modes)](#remotely-viewing-profiles-serve-and-attach-modes)
   * [(Deprecated) Legacy Profile Viewer](#deprecated-legacy-profile-viewer)
       * [Interacting with a Profile](#interacting-with-a-profile)
