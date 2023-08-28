@@ -113,7 +113,7 @@ legion_prof --archive prof_*.gz -o legion_prof_archive
 In this mode log files are parsed locally but the profiler generates
 an archive (a directory containing processed profile files).
 
-To view the tiles, upload them to a publicly-visible web server and
+To view the archive, upload it to a publicly-visible web server and
 open the URL:
 `https://legion.stanford.edu/prof-viewer/?url=https://<URL>` where
 `<URL>` is the location the archive was uploaded to. Note that it is
