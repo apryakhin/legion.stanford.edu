@@ -80,7 +80,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 cargo install --locked --all-features --path legion/tools/legion_prof_rs
 {% endhighlight %}
 
-The first line installs Rust. The second installs `legion_prof`
+The first line installs Rust. The second installs the `legion_prof`
 binary into `~/.cargo/bin`. The supported flags can be queried with
 `legion_prof --help`.
 
