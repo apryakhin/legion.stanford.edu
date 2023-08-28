@@ -11,7 +11,7 @@ techniques to achieving high performance in Legion applications.
   * [Preliminary Steps](#preliminary-steps)
   * [Legion Prof](#legion-prof)
       * [Generating Legion Prof Logs](#generating-legion-prof-logs)
-      * [Installing `legion_prof`](#installing-legion-prof)
+      * [Installing `legion_prof`](#installing-legion_prof)
       * [Viewing Profiles Locally (View Mode)](#viewing-profiles-locally-view-mode)
       * [Saving and Sharing Profiles (Archive Mode)](#sharing-profiles-archive-mode)
       * [Remotely Viewing Profiles (Serve and Attach Modes)](#remotely-viewing-profiles-serve-and-attach-modes)
