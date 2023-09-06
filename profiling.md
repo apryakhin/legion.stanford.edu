@@ -359,7 +359,7 @@ prefixed with `-ll:`.
     be at least one of these threads. Applications which are 
     very communication intensive may consider increasing the 
     number of threads for handling active messages. The default
-    value is 1.
+    value is 1. (Note: this flag is available with the `gasnet1` and `mpi` networks only, and not available with `gasnetex`.)
  * `-ll:bgwork <int>` - Specify the number of 
     background threads. For applications
     which do significant movement of data between distinct 
