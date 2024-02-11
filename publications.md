@@ -49,6 +49,7 @@ title: Publications
       * [Sean Treichler's Thesis (2016)](#treichler_thesis) \[[PDF]({{ "/pdfs/treichler_thesis.pdf" | relative_url }})]
       * [Elliott Slaughter's Thesis (2017)](#slaughter_thesis) \[[PDF]({{ "/pdfs/slaughter_thesis.pdf" | relative_url }})]
       * [Wonchan Lee's Thesis (2019)](#lee_thesis) \[[PDF]({{ "/pdfs/lee_thesis.pdf" | relative_url }})]
+      * [Zhihao Jia's Thesis (2020)](#jia_thesis) \[[PDF]({{ "/pdfs/jia_thesis.pdf" | relative_url }})]
       * [Rupanshu Soi's Thesis (2021)](#soi_thesis) \[[PDF]({{ "/pdfs/soi_thesis.pdf" | relative_url }})]
 
 ## Papers
@@ -895,6 +896,73 @@ recording only when those locations are still valid. Dynamic tracing
 significantly improves the efficiency of tasking, and thereby brings
 the strong scalability of explicit parallelism to implicit task
 parallelism.
+
+
+<a name="jia_thesis"></a>**Automated Discovery of Machine Learning Optimizations** [PDF]({{ "/pdfs/jia_thesis.pdf" | relative_url }})<br/>
+*Zhihao Jia*<br/>
+August 2020<br/>
+**Abstract:** The increasing complexity of machine learning (ML)
+models and ML-specific hardware architectures makes it increasingly
+challenging to build efficient and scalable ML systems. Today's ML
+systems heavily rely on human effort to optimize the deployment of ML
+models on modern hardware platforms, which requires a tremendous
+amount of engineering effort but only provides suboptimal runtime
+performance. Moreover, the rapid evolution of ML models and
+ML-specific hardware makes it infeasible to manually optimize
+performance for all model and hardware combinations.
+
+In this dissertation, we propose a search-based methodology to build
+performant ML systems by automatically discovering performance
+optimizations for ML computations. Instead of only considering the
+limited set of manually designed performance optimizations in current
+ML systems, our approach introduces a significantly more comprehensive
+search space of possible strategies to optimize the deployment of an
+ML model on a hardware platform. In addition, we design efficient
+search algorithms to explore the search space and discover
+highly-optimized strategies. The search is guided by a cost model for
+evaluating the performance of different strategies. We also propose a
+number of techniques to accelerate the search procedure by leveraging
+the topology of the search space.
+
+This dissertation presents three ML systems that apply this
+methodology to optimize different tasks in ML deployment. Compared to
+current ML systems relying on manually designed optimizations, our ML
+systems enable better runtime performance by automatically discovering
+novel performance optimizations that are missing in current ML
+systems. Moreover, the performance improvement is achieved with less
+engineering effort, since the code needed for discovering these
+optimizations is much less than manual implementation of these
+optimizations.
+
+First, we developed TASO, the first ML graph optimizer that
+automatically generates graph optimizations. TASO formally verifies
+the correctness of the generated graph optimizations using an
+automated theorem prover, and uses cost-based backtracking search to
+discover how to apply the verified optimizations. In addition to
+improving runtime performance and reducing engineering effort, TASO
+also provides correctness guarantees using formal methods.
+
+Second, to generalize and go beyond today's manually designed
+parallelization strategies for distributed ML computations, we
+introduce the SOAP search space, which contains a comprehensive set of
+possible strategies to parallelize ML computations by identifying
+parallelization opportunities across different Samples, Operators,
+Attributes, and Parameters. We developed FlexFlow, a deep learning
+engine that automatically searches over strategies in the SOAP search
+space. FlexFlow includes a novel execution simulator to evaluate the
+runtime performance of different strategies, and uses a Markov Chain
+Monte Carlo (MCMC) search algorithm to find performant
+strategies. FlexFlow discovers strategies that significantly
+outperform existing strategies, while requiring no manual effort
+during the search procedure.
+
+Finally, we developed Roc, which automates data placement
+optimizations and minimizes data transfers in the memory hierarchy for
+large-scale graph neural network (GNN) computations. Roc formulates
+the task of optimizing data placement as a cost minimization problem
+and uses a dynamic programming algorithm to discover a globally
+optimal data management plan that minimizes data transfers between
+memories.
 
 <a name="soi_thesis"></a>**Scaling Implicit Parallelism with Index Launches** [PDF]({{ "/pdfs/soi_thesis.pdf" | relative_url }})<br/>
 *Rupanshu Soi*<br/>
