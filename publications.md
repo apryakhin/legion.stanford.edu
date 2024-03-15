@@ -41,6 +41,7 @@ title: Publications
       * [HTR Solver (2020)](#htr2020) \[[PDF](https://doi.org/10.1016/j.cpc.2020.107262)]
       * [Task Bench (SC 2020)](#taskbench2020) \[[PDF]({{ "/pdfs/taskbench2020.pdf" | relative_url }})]
       * [Meshfree Solver (PAW-ATM 2020)](#meshfree2020) \[[PDF]({{ "/pdfs/pawatm2020.pdf" | relative_url }})]
+      * [SpiniFEL (WAMTA 2024)](#wamta2024) \[[PDF]({{ "/pdfs/wamta2024.pdf" | relative_url }})]
   * DSLs:
       * [Singe (PPoPP 2014)](#ppopp2014) \[[PDF]({{ "/pdfs/singe2014.pdf" | relative_url }})]
       * [Scout (WOLFHPC 2014)](#wolfhpc2014) \[[PDF]({{ "/pdfs/scout2014.pdf" | relative_url }})]
@@ -644,7 +645,7 @@ computer graphics.
 
 <a name="legate-sparse2023"></a>__Legate Sparse: Distributed Sparse Computing in Python__ [PDF]({{ "/pdfs/legate-sparse2023.pdf" | relative_url }}) <br/>
 _Rohan Yadav, Wonchan Lee, Melih Elibol, Taylor Lee Patti, Manolis Papadakis, Michael Garland, Alex Aiken, Fredrik Kjolstad and Michael Bauer_ <br/>
-To appear in the International Conference for High Performance Computing, Networking, Storage and Analysis ([SC 2023](https://sc23.supercomputing.org/presentation/?id=pap119&sess=sess172)) <br/>
+In the International Conference for High Performance Computing, Networking, Storage and Analysis ([SC 2023](https://sc23.supercomputing.org/presentation/?id=pap119&sess=sess172)) <br/>
 __Abstract:__ The sparse module of the popular SciPy Python library is
 widely used across applications in scientific computing, data analysis
 and machine learning. The standard implementation of SciPy is
@@ -665,7 +666,7 @@ productivity benefits of idiomatic SciPy and NumPy.
 
 <a name="automap2023"></a>__Automated Mapping of Task-Based Programs onto Distributed and Heterogeneous Machines__ [PDF]({{ "/pdfs/automap2023.pdf" | relative_url }}) <br/>
 _Thiago S. F. X. Teixeira, Alexandra Henzinger, Rohan Yadav and Alex Aiken_ <br/>
-To appear in the International Conference for High Performance Computing, Networking, Storage and Analysis ([SC 2023](https://sc23.supercomputing.org/presentation/?id=pap389&sess=sess172)) <br/>
+In the International Conference for High Performance Computing, Networking, Storage and Analysis ([SC 2023](https://sc23.supercomputing.org/presentation/?id=pap389&sess=sess172)) <br/>
 __Abstract:__ In a parallel and distributed application, a *mapping*
 is a selection of a processor for each computation or task and
 memories for the data collections that each task accesses. Finding
@@ -684,6 +685,19 @@ coordinate-wise* descent search algorithm that balances the trade-off
 between running computations quickly and minimizing data
 movement. AutoMap discovers mappings up to 2.41&times; faster than
 custom, hand-written mappers.
+
+
+<a name="wamta2024"></a>__Speaking Pygion: Experiences Writing an Exascale Single Particle Imaging Code__ [PDF]({{ "/pdfs/wamta2024.pdf" | relative_url }}) <br/>
+_Seema Mirchandaney, Alex Aiken, and Elliott Slaughter_ <br/>
+In the Workshop on Asynchronous Many-Task Systems and Applications ([WAMTA 2024](http://wamta24.icl.utk.edu/)) <br/>
+__Abstract:__ The goal of the SpiniFEL project was to write, from
+scratch, a single particle imaging code for exascale
+supercomputers. The original vision was to have two versions of the
+code, one in MPI and one in Pygion, a Python-based interface to the
+Legion task-based runtime. We describe the motivation for the project,
+some of the programming challenges we encountered along the way, what
+worked and what didn't, and why only the Pygion code eventually
+succeeded in running at scale.
 
 
 
